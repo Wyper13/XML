@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE mv:query SYSTEM "config.dtd">
 <!-- On ne fait pas de queries / query puisqu'on fait une union après ... -->
 <mv:query xmlns:mv="http://moviesRT">
@@ -8,14 +8,12 @@
 	<mv:id>122</mv:id>
 	<mv:id>123</mv:id>
 	<mv:random>3</mv:random>
-<!--
 	<mv:include>
 		<mv:prop>title</mv:prop>
 		<mv:prop>runtime</mv:prop>
 		<mv:prop>vote_average</mv:prop>
 		<mv:prop>vote_count</mv:prop>
 	</mv:include>
--->	
 	<mv:exclude>
 		<mv:prop>overview</mv:prop>
 	</mv:exclude>
