@@ -33,7 +33,7 @@ public class XML
     {
         // <editor-fold defaultstate="collapsed" desc="args">
         ArgumentParser AP = ArgumentParsers.newArgumentParser("moviesRT");
-        AP.addArgument("-c", "--config").required(true).setDefault("./config.xml").help("XML");
+        AP.addArgument("-c", "--config").setDefault("./config.xml").help("XML");
         
         Namespace ARGS = null;
         try
@@ -53,8 +53,7 @@ public class XML
         saxPF.setNamespaceAware(true);
                 
         XMLReader parser = null;
-        PrintStream out = new PrintStream(System.out, true, "UTF-8");
-        ContentHdl contentH = new ContentHdl(out);
+        ContentHdl contentH = new ContentHdl();
         ErrorHdl errorH = new ErrorHdl();
         
         try
@@ -64,6 +63,10 @@ public class XML
             parser.setErrorHandler(errorH);
             parser.parse(xml);
             System.out.println("OK");
+            System.out.println("Random : " + contentH.getRandom());
+            System.out.println("nIds : " + contentH.getIds().size());
+            System.out.println("nIncl : " + contentH.getIncl().size());
+            System.out.println("nExcl : " + contentH.getExcl().size());
         }
         catch (ParserConfigurationException ex)
         {
