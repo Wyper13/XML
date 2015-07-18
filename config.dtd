@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!ELEMENT mv:query ((mv:id)*, (mv:random)*, (mv:include)?, (mv:exclude)?)>
+<!ELEMENT mv:query (((mv:id)* | (mv:random)*)*, (mv:include)?, (mv:exclude)?)>
 <!ATTLIST mv:query xmlns:mv CDATA #FIXED "http://moviesRT">
 <!ELEMENT mv:id (#PCDATA)>
 <!ELEMENT mv:random (#PCDATA)>
