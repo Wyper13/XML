@@ -6,13 +6,14 @@
 package xml;
 
 // <editor-fold defaultstate="collapsed" desc="imports">
+import com.mongodb.DBCursor;
+import xml.sax.ErrorHdl;
+import xml.sax.ContentHdl;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import net.sourceforge.argparse4j.ArgumentParsers;
 import net.sourceforge.argparse4j.inf.ArgumentParser;
@@ -20,6 +21,8 @@ import net.sourceforge.argparse4j.inf.ArgumentParserException;
 import net.sourceforge.argparse4j.inf.Namespace;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
+import xml.dom.DomBuilder;
+import xml.utils.Mongo;
 // </editor-fold>
 
 /**
@@ -34,6 +37,8 @@ public class XML
         // <editor-fold defaultstate="collapsed" desc="args">
         ArgumentParser AP = ArgumentParsers.newArgumentParser("moviesRT");
         AP.addArgument("-c", "--config").setDefault("./config.xml").help("XML");
+        AP.addArgument("-d", "--dom").setDefault("2").help("DOM lvl");
+        AP.addArgument("-o", "--output").setDefault("./movies.xml").help("Output XML file");
         
         Namespace ARGS = null;
         try
@@ -80,6 +85,19 @@ public class XML
         {
             Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
         }
+        // </editor-fold>
+        
+        // <editor-fold defaultstate="collapsed" desc="4. dom">
+        int domlvl = Integer.parseInt(ARGS.getString("dom"));
+        Mongo mongo = new Mongo();
+        DBCursor cursor =  mongo.getMovies(contentH);
+        
+        DomBuilder domBuilder = new DomBuilder(domlvl);
+        domBuilder.generateDoc(cursor);
+        
+        String outFile = ARGS.getString("output");
+        
+        domBuilder.domSerialize(outFile);
         
         // </editor-fold>
     }

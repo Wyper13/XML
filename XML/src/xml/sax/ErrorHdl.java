@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package xml;
+package xml.sax;
 
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;

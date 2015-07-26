@@ -1,9 +1,9 @@
- /*
-  * To change this license header, choose License Headers in Project Properties.
-  * To change this template file, choose Tools | Templates
-  * and open the template in the editor.
-  */
-package xml;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package xml.sax;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -60,29 +60,32 @@ public class ContentHdl extends DefaultHandler
     public void endElement(String uri, String localName, String qName)
             throws SAXException
     {
-        //System.out.println(str);
-        switch(element)
+        if(!str.equals(""))
         {
-            case "id":
-                ids.add(Integer.parseInt(str));
-                break;
-            case "random":
-                random += Integer.parseInt(str);
-                break;            
-            case "prop":
-                if(include) // include
-                {
-                    if(!str.isEmpty())
-                        incl.add(str);
-                }
-                else // exclude
-                {
-                    if(!str.isEmpty())
-                        excl.add(str); 
-                }
-                break;
-            default:
-                break;
+            //System.out.println(str);
+            switch(element)
+            {
+                case "id":
+                    ids.add(Integer.parseInt(str));
+                    break;
+                case "random":
+                    random += Integer.parseInt(str);
+                    break;
+                case "prop":
+                    if(include) // include
+                    {
+                        if(!str.isEmpty())
+                            incl.add(str);
+                    }
+                    else // exclude
+                    {
+                        if(!str.isEmpty())
+                            excl.add(str);
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
         //System.out.println("EndElement - " + qName);
         str = new String();
@@ -98,22 +101,22 @@ public class ContentHdl extends DefaultHandler
     @Override
     public void ignorableWhitespace(char[] ch, int start, int length)
             throws SAXException {}
-
+    
     public Integer getRandom()
     {
         return random;
     }
-
+    
     public Set<Integer> getIds()
     {
         return ids;
     }
-
+    
     public Set<String> getIncl()
     {
         return incl;
     }
-
+    
     public Set<String> getExcl()
     {
         return excl;

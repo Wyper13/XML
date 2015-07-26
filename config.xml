@@ -7,14 +7,16 @@
 	<mv:random>5</mv:random>
 	<mv:id>122</mv:id>
 	<mv:id>123</mv:id>
+	<mv:id>279721</mv:id>
+	<mv:id>76518</mv:id>
 	<mv:random>3</mv:random>
-	<mv:include>
-		<mv:prop>title</mv:prop>
-		<mv:prop>runtime</mv:prop>
+	<!--<mv:include>
 		<mv:prop>vote_average</mv:prop>
 		<mv:prop>vote_count</mv:prop>
+		<mv:prop>title</mv:prop>
+		<mv:prop>runtime</mv:prop>
 	</mv:include>
 	<mv:exclude>
-		<mv:prop>overview</mv:prop>
-	</mv:exclude>
+		<mv:prop>vote_count</mv:prop>
+	</mv:exclude>-->
 </mv:query>
