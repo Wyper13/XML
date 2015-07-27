@@ -66,7 +66,8 @@ public class DomBuilder
             {
                 DOMImplementationRegistry dir = DOMImplementationRegistry.newInstance();
                 DOMImplementation di = dir.getDOMImplementation("XML 3.0 LS 3.0");
-                DocumentType dt = di.createDocumentType("movies", null, null);
+                File dtd = new File("movies.dtd");
+                DocumentType dt = di.createDocumentType("movies", null, dtd.getAbsolutePath());
                 doc = di.createDocument("http://moviesRT", "movies", dt);
             }
             catch (ClassNotFoundException | InstantiationException | IllegalAccessException | ClassCastException ex)
@@ -76,7 +77,7 @@ public class DomBuilder
         }
     }
     
-    public Document generateDoc(DBCursor cursor)
+    public void generateDoc(DBCursor cursor)
     {
         Element root = null;
         if(lvl == 2)
@@ -94,10 +95,9 @@ public class DomBuilder
             Node movie = generateMovieNode(DBmovie);
             root.appendChild(movie);
         }
-        
-        return doc;
     }
     
+    // <editor-fold defaultstate="collapsed" desc="Main">
     private Node generateMovieNode(DBObject DBmovie)
     {
         Element movie = doc.createElementNS("http://moviesRT", "movie");
@@ -145,7 +145,9 @@ public class DomBuilder
         
         return movie;
     }
+    //</editor-fold>
     
+    // <editor-fold defaultstate="collapsed" desc="Child">
     private void textChild(DBObject DBmovie, Element movie, String field)
     {
         if(DBmovie.get(field) != null)
@@ -186,101 +188,120 @@ public class DomBuilder
     {
         Element subRoot = doc.createElementNS("http://moviesRT", "genres");
         BasicDBList genres = (BasicDBList) DBmovie.get("genres");
-        for (Object genre : genres)
+        if(!genres.isEmpty())
         {
-            Element g = doc.createElementNS("http://moviesRT", "genre");
-            g.setAttribute("id", ((Map)genre).get("id").toString());
-            g.setTextContent(((Map)genre).get("name").toString());
-            
-            subRoot.appendChild(g);
+            for (Object genre : genres)
+            {
+                Element g = doc.createElementNS("http://moviesRT", "genre");
+                g.setAttribute("id", ((Map)genre).get("id").toString());
+                g.setTextContent(((Map)genre).get("name").toString());
+                
+                subRoot.appendChild(g);
+            }
+            movie.appendChild(subRoot);
         }
-        movie.appendChild(subRoot);
     }
     
     private void languagesChild(DBObject DBmovie, Element movie)
     {
         Element subRoot = doc.createElementNS("http://moviesRT", "spoken_languages");
         BasicDBList langs = (BasicDBList) DBmovie.get("spoken_languages");
-        for (Object lang : langs)
+        if(!langs.isEmpty())
         {
-            Element g = doc.createElementNS("http://moviesRT", "spoken_languages");
-            g.setAttribute("iso", ((Map)lang).get("iso_639_1").toString());
-            g.setTextContent(((Map)lang).get("name").toString());
-            
-            subRoot.appendChild(g);
+            for (Object lang : langs)
+            {
+                Element g = doc.createElementNS("http://moviesRT", "spoken_language");
+                g.setAttribute("iso", ((Map)lang).get("iso_639_1").toString());
+                g.setTextContent(((Map)lang).get("name").toString());
+                
+                subRoot.appendChild(g);
+            }
+            movie.appendChild(subRoot);
         }
-        movie.appendChild(subRoot);
     }
     
     private void actorsChild(DBObject DBmovie, Element movie)
     {
         Element subRoot = doc.createElementNS("http://moviesRT", "actors");
         BasicDBList actors = (BasicDBList) DBmovie.get("actors");
-        for (Object act : actors)
+        if(!actors.isEmpty())
         {
-            Element g = doc.createElementNS("http://moviesRT", "actor");
-            g.setAttribute("id", ((Map)act).get("id").toString());
-            g.setAttribute("name", ((Map)act).get("name").toString());
-            if(((Map)act).get("profile_path") != null)
-                g.setAttribute("profile_path", ((Map)act).get("profile_path").toString());
-            
-            Element actor = doc.createElementNS("http://moviesRT", "character");
-            actor.setAttribute("cast_id", ((Map)act).get("cast_id").toString());
-            actor.setTextContent(((Map)act).get("character").toString());
-            
-            g.appendChild(actor);
-            
-            subRoot.appendChild(g);
+            for (Object act : actors)
+            {
+                Element g = doc.createElementNS("http://moviesRT", "actor");
+                g.setAttribute("id", ((Map)act).get("id").toString());
+                g.setAttribute("name", ((Map)act).get("name").toString());
+                if(((Map)act).get("profile_path") != null)
+                    g.setAttribute("profile_path", ((Map)act).get("profile_path").toString());
+                
+                Element actor = doc.createElementNS("http://moviesRT", "character");
+                actor.setAttribute("cast_id", ((Map)act).get("cast_id").toString());
+                actor.setTextContent(((Map)act).get("character").toString());
+                
+                g.appendChild(actor);
+                
+                subRoot.appendChild(g);
+            }
+            movie.appendChild(subRoot);
         }
-        movie.appendChild(subRoot);
     }
     
     private void directorsChild(DBObject DBmovie, Element movie)
     {
         Element subRoot = doc.createElementNS("http://moviesRT", "directors");
         BasicDBList directors = (BasicDBList) DBmovie.get("directors");
-        for (Object director : directors)
+        if(!directors.isEmpty())
         {
-            Element g = doc.createElementNS("http://moviesRT", "director");
-            g.setAttribute("id", ((Map)director).get("id").toString());
-            if(((Map)director).get("profile_path") != null)
-                g.setAttribute("profile_path", ((Map)director).get("profile_path").toString());            
-            g.setTextContent(((Map)director).get("name").toString());
+            for (Object director : directors)
+            {
+                Element g = doc.createElementNS("http://moviesRT", "director");
+                g.setAttribute("id", ((Map)director).get("id").toString());
+                if(((Map)director).get("profile_path") != null)
+                    g.setAttribute("profile_path", ((Map)director).get("profile_path").toString());
+                g.setTextContent(((Map)director).get("name").toString());
                 
-            subRoot.appendChild(g);
+                subRoot.appendChild(g);
+            }
+            movie.appendChild(subRoot);
         }
-        movie.appendChild(subRoot);
     }
     
     private void companiesChild(DBObject DBmovie, Element movie)
     {
         Element subRoot = doc.createElementNS("http://moviesRT", "production_companies");
         BasicDBList companies = (BasicDBList) DBmovie.get("production_companies");
-        for (Object company : companies)
+        if(!companies.isEmpty())
         {
-            Element g = doc.createElementNS("http://moviesRT", "production_company");
-            g.setAttribute("id", ((Map)company).get("id").toString());
-            g.setTextContent(((Map)company).get("name").toString());
-            
-            subRoot.appendChild(g);
+            for (Object company : companies)
+            {
+                Element g = doc.createElementNS("http://moviesRT", "production_company");
+                g.setAttribute("id", ((Map)company).get("id").toString());
+                g.setTextContent(((Map)company).get("name").toString());
+                
+                subRoot.appendChild(g);
+            }
+            movie.appendChild(subRoot);
         }
-        movie.appendChild(subRoot);
     }
     
     private void countriesChild(DBObject DBmovie, Element movie)
     {
         Element subRoot = doc.createElementNS("http://moviesRT", "production_countries");
-        BasicDBList contries = (BasicDBList) DBmovie.get("production_countries");
-        for (Object country : contries)
+        BasicDBList countries = (BasicDBList) DBmovie.get("production_countries");
+        if(!countries.isEmpty())
         {
-            Element g = doc.createElementNS("http://moviesRT", "production_country");
-            g.setAttribute("iso", ((Map)country).get("iso_3166_1").toString());
-            g.setTextContent(((Map)country).get("name").toString());
-            
-            subRoot.appendChild(g);
+            for (Object country : countries)
+            {
+                Element g = doc.createElementNS("http://moviesRT", "production_country");
+                g.setAttribute("iso", ((Map)country).get("iso_3166_1").toString());
+                g.setTextContent(((Map)country).get("name").toString());
+                
+                subRoot.appendChild(g);
+            }
+            movie.appendChild(subRoot);
         }
-        movie.appendChild(subRoot);
     }
+    //</editor-fold>
     
     public void domSerialize(String file)
     {
@@ -288,10 +309,12 @@ public class DomBuilder
         {
             try
             {
+                File dtd = new File("movies.dtd");
                 Transformer tf = TransformerFactory.newInstance().newTransformer();
                 tf.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
                 tf.setOutputProperty(OutputKeys.INDENT, "YES");
                 tf.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "3");
+                tf.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, dtd.getAbsolutePath());
                 FileOutputStream fos = new FileOutputStream(new File(file));
                 DOMSource src = new DOMSource(doc);
                 StreamResult out = new StreamResult(fos);

@@ -108,6 +108,11 @@ public class Mongo
         {
             projections = projBase;
         }
+        else if(content.getIncl().isEmpty())
+        {
+            projections = projBase;
+            projections.removeAll(content.getExcl());
+        }
         else
         {
             // Incl - excl

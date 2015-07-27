@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT movies (movie*)>
+<!ATTLIST movies xmlns:mv CDATA #FIXED "http://moviesRT">
+<!ELEMENT movie (_id, title?, genres?, overview?, vote_average?, vote_count?, release_date?, runtime?, spoken_languages?, status?, tagline?, actors?, directors?, production_companies?, original_title?, budget?, revenue?, production_countries?, homepage?, poster_path?)>
+
+<!ELEMENT _id (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT genres (genre*)>
+<!ELEMENT overview (#CDATA)>
+<!ELEMENT vote_average (#PCDATA)>
+<!ELEMENT vote_count (#PCDATA)>
+<!ELEMENT release_date (#PCDATA)>
+<!ELEMENT runtime (#PCDATA)>
+<!ELEMENT spoken_languages (spoken_language*)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT tagline (#CDATA)>
+<!ELEMENT actors (actor*)>
+<!ELEMENT directors (director*)>
+<!ELEMENT production_companies (production_company*)>
+<!ELEMENT original_title (#PCDATA)>
+<!ELEMENT budget (#PCDATA)>
+<!ELEMENT revenue (#PCDATA)>
+<!ELEMENT production_countries (production_country*)>
+<!ELEMENT homepage (#PCDATA)>
+<!ELEMENT poster_path (#PCDATA)>
+
+<!ELEMENT genre (#PCDATA)>
+<!ATTLIST genre id CDATA #IMPLIED>
+
+<!ELEMENT spoken_language (#PCDATA)>
+<!ATTLIST spoken_language iso CDATA #IMPLIED>
+
+<!ELEMENT actor (#PCDATA)>
+<!ATTLIST actor id CDATA #IMPLIED
+				name CDATA #IMPLIED
+				profile_path CDATA #IMPLIED>
+
+<!ELEMENT director (#PCDATA)>
+<!ATTLIST director id CDATA #IMPLIED 
+				   profile_path CDATA #IMPLIED>
+
+<!ELEMENT production_company (#PCDATA)>
+<!ATTLIST production_company id CDATA #IMPLIED>
+
+<!ELEMENT production_country (#PCDATA)>
+<!ATTLIST production_country id CDATA #IMPLIED>

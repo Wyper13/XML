@@ -98,7 +98,6 @@ public class XML
         String outFile = ARGS.getString("output");
         
         domBuilder.domSerialize(outFile);
-        
         // </editor-fold>
     }
     

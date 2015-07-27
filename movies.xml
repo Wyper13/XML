@@ -1,704 +1,694 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE movies SYSTEM "/Users/Thibault/Documents/Git/XML/movies.dtd">
 <movies xmlns="http://moviesRT">
-    <movie>
-        <_id>120</_id>
-        <title>The Lord of the Rings: The Fellowship of the Ring</title>
-        <genres>
-            <genre id="28">Action</genre>
-            <genre id="12">Adventure</genre>
-            <genre id="14">Fantasy</genre>
-        </genres>
-        <overview><![CDATA[Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.]]></overview>
-        <vote_average>7.4</vote_average>
-        <vote_count>3417</vote_count>
-        <release_date>2001-12-19</release_date>
-        <runtime>178</runtime>
-        <spoken_languages>
-            <spoken_languages iso="en">English</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <tagline><![CDATA[One ring to rule them all]]></tagline>
-        <actors>
-            <actor id="109" name="Elijah Wood" profile_path="/c4fB3WAS7jN78rihw2kB81v6sez.jpg">
-                <character cast_id="28">Frodo Baggins</character>
-            </actor>
-            <actor id="1327" name="Ian McKellen" profile_path="/c51mP46oPgAgFf7bFWVHlScZynM.jpg">
-                <character cast_id="29">Gandalf the Grey</character>
-            </actor>
-            <actor id="110" name="Viggo Mortensen" profile_path="/kmagPINweYf2eZwJVpxa0XYJz9y.jpg">
-                <character cast_id="30">Aragorn</character>
-            </actor>
-            <actor id="882" name="Liv Tyler" profile_path="/hjZTqH1qXSG5WFDmtOqEgtuTJOZ.jpg">
-                <character cast_id="31">Arwen Evenstar</character>
-            </actor>
-            <actor id="114" name="Orlando Bloom" profile_path="/jLF5zDGkxhSkea49CeOrpyMFipN.jpg">
-                <character cast_id="32">Legolas</character>
-            </actor>
-            <actor id="655" name="John Rhys-Davies" profile_path="/zZ67PuoFfik9QlZyfaEsFBC1yVJ.jpg">
-                <character cast_id="33">Gimli</character>
-            </actor>
-            <actor id="48" name="Sean Bean" profile_path="/arkVBI4myH8kvxFc7QIapy2DuT6.jpg">
-                <character cast_id="34">Boromir</character>
-            </actor>
-            <actor id="113" name="Christopher Lee" profile_path="/7YwjaHLmuy1isK6oh3TnBDd6Oml.jpg">
-                <character cast_id="35">Saruman</character>
-            </actor>
-            <actor id="1328" name="Sean Astin" profile_path="/jqF72oav6vmGAWl33GNO6EpZtwA.jpg">
-                <character cast_id="36">Samwise 'Sam' Gamgee</character>
-            </actor>
-            <actor id="1329" name="Billy Boyd" profile_path="/nwNHDM67VYAb87sjSqYQVWaZKyK.jpg">
-                <character cast_id="37">Peregrin 'Pippin' Took</character>
-            </actor>
-            <actor id="1330" name="Dominic Monaghan" profile_path="/sXkqoK3v1nfCudXIcxKVwDc0imw.jpg">
-                <character cast_id="38">Meriadoc 'Merry' Brandybuck</character>
-            </actor>
-            <actor id="1331" name="Hugo Weaving" profile_path="/ysED1kp94bpnweNVaDoVQQ6iy8X.jpg">
-                <character cast_id="39">Elrond</character>
-            </actor>
-            <actor id="112" name="Cate Blanchett" profile_path="/wkWpYrtA1QCNv4B6L6fBTMRBiQ9.jpg">
-                <character cast_id="40">Galadriel</character>
-            </actor>
-            <actor id="65" name="Ian Holm" profile_path="/uq6Wx7PaLgaw969avH7tLHnSb0Q.jpg">
-                <character cast_id="41">Bilbo Baggins</character>
-            </actor>
-            <actor id="1332" name="Craig Parker" profile_path="/r6hcUPziMqlMCfBELdNj3OuZeud.jpg">
-                <character cast_id="42">Haldir</character>
-            </actor>
-            <actor id="1365" name="Lawrence Makoare" profile_path="/yVHInaWXU4ynUnNE3qa59hvsFAJ.jpg">
-                <character cast_id="43">Lurtz</character>
-            </actor>
-            <actor id="1366" name="Sala Baker" profile_path="/vYXFCRoosgksT3F2A9SsiFn3pID.jpg">
-                <character cast_id="44">Sauron</character>
-            </actor>
-            <actor id="1333" name="Andy Serkis" profile_path="/olYcaJoZuHVW92gZgtVMUWGqMR8.jpg">
-                <character cast_id="46">Gollum</character>
-            </actor>
-            <actor id="965278" name="Sarah McLeod" profile_path="/8BFVSAmPX0sjyqelYCtJktF0Vk6.jpg">
-                <character cast_id="47">Rose 'Rosie' Cotton</character>
-            </actor>
-            <actor id="20982" name="Marton Csokas" profile_path="/tR1GSfLJ7oukJ4sB62MlfVbCGzg.jpg">
-                <character cast_id="49">Celeborn</character>
-            </actor>
-        </actors>
-        <directors>
-            <director id="108" profile_path="/hTUqZAjH7SHXb0EXEA1I9EoJFnF.jpg">Peter Jackson</director>
-        </directors>
-        <production_companies>
-            <production_company id="12">New Line Cinema</production_company>
-            <production_company id="11">WingNut Films</production_company>
-            <production_company id="5237">The Saul Zaentz Company</production_company>
-        </production_companies>
-        <original_title>The Lord of the Rings: The Fellowship of the Ring</original_title>
-        <budget>93000000</budget>
-        <revenue>871368364</revenue>
-        <production_countries>
-            <production_country iso="NZ">New Zealand</production_country>
-            <production_country iso="US">United States of America</production_country>
-        </production_countries>
-        <homepage>http://www.lordoftherings.net/</homepage>
-        <poster_path>/9HG6pINW1KoFTAKY3LdybkoOKAm.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>121</_id>
-        <title>The Lord of the Rings: The Two Towers</title>
-        <genres>
-            <genre id="28">Action</genre>
-            <genre id="12">Adventure</genre>
-            <genre id="14">Fantasy</genre>
-        </genres>
-        <overview><![CDATA[Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.]]></overview>
-        <vote_average>7.4</vote_average>
-        <vote_count>2786</vote_count>
-        <release_date>2002-12-18</release_date>
-        <runtime>179</runtime>
-        <spoken_languages>
-            <spoken_languages iso="en">English</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <tagline><![CDATA[A New Power Is Rising.]]></tagline>
-        <actors>
-            <actor id="109" name="Elijah Wood" profile_path="/c4fB3WAS7jN78rihw2kB81v6sez.jpg">
-                <character cast_id="13">Frodo Baggins</character>
-            </actor>
-            <actor id="1327" name="Ian McKellen" profile_path="/c51mP46oPgAgFf7bFWVHlScZynM.jpg">
-                <character cast_id="14">Gandalf the White</character>
-            </actor>
-            <actor id="110" name="Viggo Mortensen" profile_path="/kmagPINweYf2eZwJVpxa0XYJz9y.jpg">
-                <character cast_id="15">Aragorn</character>
-            </actor>
-            <actor id="882" name="Liv Tyler" profile_path="/hjZTqH1qXSG5WFDmtOqEgtuTJOZ.jpg">
-                <character cast_id="16">Arwen Evenstar</character>
-            </actor>
-            <actor id="114" name="Orlando Bloom" profile_path="/jLF5zDGkxhSkea49CeOrpyMFipN.jpg">
-                <character cast_id="17">Legolas</character>
-            </actor>
-            <actor id="655" name="John Rhys-Davies" profile_path="/zZ67PuoFfik9QlZyfaEsFBC1yVJ.jpg">
-                <character cast_id="18">Gimli / Voice of Treebeard</character>
-            </actor>
-            <actor id="113" name="Christopher Lee" profile_path="/7YwjaHLmuy1isK6oh3TnBDd6Oml.jpg">
-                <character cast_id="19">Saruman</character>
-            </actor>
-            <actor id="1328" name="Sean Astin" profile_path="/ezv9hRbgrR6Uuz4xWqX22cpiRXJ.jpg">
-                <character cast_id="20">Sam Gamgee</character>
-            </actor>
-            <actor id="1329" name="Billy Boyd" profile_path="/vNhUoHhBqyjDVuc0nxJHanTKA2E.jpg">
-                <character cast_id="21">Peregrin 'Pippin' Took</character>
-            </actor>
-            <actor id="1330" name="Dominic Monaghan" profile_path="/sXkqoK3v1nfCudXIcxKVwDc0imw.jpg">
-                <character cast_id="22">Meriadoc 'Merry' Brandybuck</character>
-            </actor>
-            <actor id="1331" name="Hugo Weaving" profile_path="/ysED1kp94bpnweNVaDoVQQ6iy8X.jpg">
-                <character cast_id="23">Elrond</character>
-            </actor>
-            <actor id="1332" name="Craig Parker" profile_path="/amJPcZnpWIABjbaN5FzW5vvTIEk.jpg">
-                <character cast_id="24">Haldir</character>
-            </actor>
-            <actor id="1369" name="Bernard Hill" profile_path="/vnepbY1BOJ2AX20bkngAT7ehJP.jpg">
-                <character cast_id="25">Théoden</character>
-            </actor>
-            <actor id="1333" name="Andy Serkis" profile_path="/olYcaJoZuHVW92gZgtVMUWGqMR8.jpg">
-                <character cast_id="26">Gollum</character>
-            </actor>
-            <actor id="1370" name="Brad Dourif" profile_path="/jfvemADVHzTWu5HiOEhYmFfSpWt.jpg">
-                <character cast_id="27">Gríma Wormtongue</character>
-            </actor>
-            <actor id="502" name="Miranda Otto" profile_path="/l3BzUjJMK3JbqvCiCIFP4beMChS.jpg">
-                <character cast_id="28">Éowyn</character>
-            </actor>
-            <actor id="1371" name="David Wenham" profile_path="/hOG5mAd5pzT30V6adkwkpe87HY7.jpg">
-                <character cast_id="29">Faramir</character>
-            </actor>
-            <actor id="1372" name="Karl Urban" profile_path="/tHYOUO33K7iaDw8nXyqRvDIkVuM.jpg">
-                <character cast_id="30">Éomer</character>
-            </actor>
-            <actor id="112" name="Cate Blanchett" profile_path="/wkWpYrtA1QCNv4B6L6fBTMRBiQ9.jpg">
-                <character cast_id="49">Galadriel</character>
-            </actor>
-            <actor id="941439" name="Olivia Tennet" profile_path="/hv8zCPSiju8YpVXXjv17osV2pV7.jpg">
-                <character cast_id="52">Freda</character>
-            </actor>
-            <actor id="48" name="Sean Bean" profile_path="/arkVBI4myH8kvxFc7QIapy2DuT6.jpg">
-                <character cast_id="53">Boromir</character>
-            </actor>
-            <actor id="173451" name="Jed Brophy" profile_path="/xfEiaREY2RJQosyGnGuGDcWONsX.jpg">
-                <character cast_id="54">Sharku / Snaga</character>
-            </actor>
-        </actors>
-        <directors>
-            <director id="108" profile_path="/hTUqZAjH7SHXb0EXEA1I9EoJFnF.jpg">Peter Jackson</director>
-        </directors>
-        <production_companies>
-            <production_company id="12">New Line Cinema</production_company>
-            <production_company id="11">WingNut Films</production_company>
-            <production_company id="5237">The Saul Zaentz Company</production_company>
-        </production_companies>
-        <original_title>The Lord of the Rings: The Two Towers</original_title>
-        <budget>79000000</budget>
-        <revenue>926287400</revenue>
-        <production_countries>
-            <production_country iso="NZ">New Zealand</production_country>
-            <production_country iso="US">United States of America</production_country>
-        </production_countries>
-        <homepage>http://www.lordoftherings.net/</homepage>
-        <poster_path>/5o5fv1dHG7vWoH2hmqwihVPBoBm.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>122</_id>
-        <title>The Lord of the Rings: The Return of the King</title>
-        <genres>
-            <genre id="28">Action</genre>
-            <genre id="12">Adventure</genre>
-            <genre id="14">Fantasy</genre>
-        </genres>
-        <overview><![CDATA[Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam bring the ring closer to the heart of Mordor, the dark lord's realm.]]></overview>
-        <vote_average>7.5</vote_average>
-        <vote_count>3215</vote_count>
-        <release_date>2003-12-17</release_date>
-        <runtime>201</runtime>
-        <spoken_languages>
-            <spoken_languages iso="en">English</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <tagline><![CDATA[The eye of the enemy is moving.]]></tagline>
-        <actors>
-            <actor id="109" name="Elijah Wood" profile_path="/c4fB3WAS7jN78rihw2kB81v6sez.jpg">
-                <character cast_id="12">Frodo Baggins</character>
-            </actor>
-            <actor id="1327" name="Ian McKellen" profile_path="/c51mP46oPgAgFf7bFWVHlScZynM.jpg">
-                <character cast_id="13">Gandalf the White</character>
-            </actor>
-            <actor id="110" name="Viggo Mortensen" profile_path="/kmagPINweYf2eZwJVpxa0XYJz9y.jpg">
-                <character cast_id="14">Aragorn</character>
-            </actor>
-            <actor id="882" name="Liv Tyler" profile_path="/hjZTqH1qXSG5WFDmtOqEgtuTJOZ.jpg">
-                <character cast_id="15">Arwen Evenstar</character>
-            </actor>
-            <actor id="114" name="Orlando Bloom" profile_path="/jLF5zDGkxhSkea49CeOrpyMFipN.jpg">
-                <character cast_id="16">Legolas</character>
-            </actor>
-            <actor id="655" name="John Rhys-Davies" profile_path="/zZ67PuoFfik9QlZyfaEsFBC1yVJ.jpg">
-                <character cast_id="17">Gimli &amp; Treebeard (Voice)</character>
-            </actor>
-            <actor id="1328" name="Sean Astin" profile_path="/jqF72oav6vmGAWl33GNO6EpZtwA.jpg">
-                <character cast_id="18">Sam Gamgee</character>
-            </actor>
-            <actor id="1329" name="Billy Boyd" profile_path="/nwNHDM67VYAb87sjSqYQVWaZKyK.jpg">
-                <character cast_id="19">Peregrin 'Pippin' Took</character>
-            </actor>
-            <actor id="1330" name="Dominic Monaghan" profile_path="/sXkqoK3v1nfCudXIcxKVwDc0imw.jpg">
-                <character cast_id="20">Meriadoc 'Merry' Brandybuck</character>
-            </actor>
-            <actor id="1331" name="Hugo Weaving" profile_path="/ysED1kp94bpnweNVaDoVQQ6iy8X.jpg">
-                <character cast_id="21">Elrond</character>
-            </actor>
-            <actor id="1369" name="Bernard Hill" profile_path="/meAkjuYbqLTPEIiXCOD7cZGovhT.jpg">
-                <character cast_id="22">Théoden, King of Rohan</character>
-            </actor>
-            <actor id="1333" name="Andy Serkis" profile_path="/olYcaJoZuHVW92gZgtVMUWGqMR8.jpg">
-                <character cast_id="23">Gollum</character>
-            </actor>
-            <actor id="502" name="Miranda Otto" profile_path="/l3BzUjJMK3JbqvCiCIFP4beMChS.jpg">
-                <character cast_id="24">Éowyn</character>
-            </actor>
-            <actor id="1371" name="David Wenham" profile_path="/hOG5mAd5pzT30V6adkwkpe87HY7.jpg">
-                <character cast_id="25">Faramir</character>
-            </actor>
-            <actor id="1372" name="Karl Urban" profile_path="/tHYOUO33K7iaDw8nXyqRvDIkVuM.jpg">
-                <character cast_id="26">Éomer</character>
-            </actor>
-            <actor id="1381" name="John Noble" profile_path="/4A2mSS9Bea5I2bNur8ZlQZXu0H9.jpg">
-                <character cast_id="27">Denethor</character>
-            </actor>
-            <actor id="65" name="Ian Holm" profile_path="/uq6Wx7PaLgaw969avH7tLHnSb0Q.jpg">
-                <character cast_id="28">Bilbo Baggins</character>
-            </actor>
-            <actor id="112" name="Cate Blanchett" profile_path="/wkWpYrtA1QCNv4B6L6fBTMRBiQ9.jpg">
-                <character cast_id="29">Galadriel</character>
-            </actor>
-            <actor id="1365" name="Lawrence Makoare" profile_path="/yVHInaWXU4ynUnNE3qa59hvsFAJ.jpg">
-                <character cast_id="30">Gothmog &amp; Witchking of Angmar</character>
-            </actor>
-            <actor id="1382" name="Paul Norell" profile_path="/dLjsu7vVkgXLLQ8QfqRb6iDRxvH.jpg">
-                <character cast_id="31">King of the Dead</character>
-            </actor>
-            <actor id="1383" name="Thomas Robins" profile_path="/p8AQeI7SXxAIjUpVEpv9q8ZxGD0.jpg">
-                <character cast_id="32">Deagol</character>
-            </actor>
-            <actor id="965278" name="Sarah McLeod" profile_path="/8BFVSAmPX0sjyqelYCtJktF0Vk6.jpg">
-                <character cast_id="49">Rosie Cotton</character>
-            </actor>
-            <actor id="48" name="Sean Bean" profile_path="/arkVBI4myH8kvxFc7QIapy2DuT6.jpg">
-                <character cast_id="50">Boromir</character>
-            </actor>
-            <actor id="20982" name="Marton Csokas" profile_path="/tR1GSfLJ7oukJ4sB62MlfVbCGzg.jpg">
-                <character cast_id="58">Celeborn</character>
-            </actor>
-        </actors>
-        <directors>
-            <director id="108" profile_path="/hTUqZAjH7SHXb0EXEA1I9EoJFnF.jpg">Peter Jackson</director>
-        </directors>
-        <production_companies>
-            <production_company id="12">New Line Cinema</production_company>
-            <production_company id="11">WingNut Films</production_company>
-        </production_companies>
-        <original_title>The Lord of the Rings: The Return of the King</original_title>
-        <budget>94000000</budget>
-        <revenue>1118888979</revenue>
-        <production_countries>
-            <production_country iso="NZ">New Zealand</production_country>
-            <production_country iso="US">United States of America</production_country>
-        </production_countries>
-        <homepage>http://www.lordoftherings.net</homepage>
-        <poster_path>/50LoR9gJhbWZ5PpoHgi8MNTYgzd.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>123</_id>
-        <title>The Lord of the Rings</title>
-        <genres>
-            <genre id="16">Animation</genre>
-        </genres>
-        <overview><![CDATA[An animated fantasy film from 1978 based on the first half of J.R.R Tolkien’s Lord of the Rings novel. The film was mainly filmed using rotoscoping, meaning it was filmed in live action sequences with real actors and then each frame was individually animated.]]></overview>
-        <vote_average>6.1</vote_average>
-        <vote_count>27</vote_count>
-        <release_date>1978-11-15</release_date>
-        <runtime>132</runtime>
-        <spoken_languages>
-            <spoken_languages iso="en">English</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <tagline><![CDATA[J.R.R. Tolkien's The Lord of the Rings]]></tagline>
-        <actors>
-            <actor id="16270" name="Christopher Guard">
-                <character cast_id="1">Frodo Beutlin</character>
-            </actor>
-            <actor id="16271" name="William Squire">
-                <character cast_id="2">Gandalf</character>
-            </actor>
-            <actor id="16272" name="Michael Scholes">
-                <character cast_id="3">Sam</character>
-            </actor>
-            <actor id="5049" name="John Hurt" profile_path="/rpuH2YRLpxJjMxHq4T1QdOSVtlN.jpg">
-                <character cast_id="4">Aragorn</character>
-            </actor>
-            <actor id="16273" name="Simon Chandler" profile_path="/j30wLavbX35RxxtjvMvCNK8Exsw.jpg">
-                <character cast_id="5">Merry</character>
-            </actor>
-            <actor id="16274" name="Dominic Guard">
-                <character cast_id="6">Pippin</character>
-            </actor>
-            <actor id="16275" name="Norman Bird" profile_path="/lHj58cWdvdkleI7lDTpRHnwqKP4.jpg">
-                <character cast_id="7">Bilbo Beutlin</character>
-            </actor>
-            <actor id="16380" name="Michael Graham Cox">
-                <character cast_id="8">Boromir</character>
-            </actor>
-            <actor id="6" name="Anthony Daniels" profile_path="/bYxaDdwT5BIQk0dl6NkXIjLgxL8.jpg">
-                <character cast_id="9">Legolas</character>
-            </actor>
-            <actor id="16381" name="David Buck" profile_path="/3H40jRDVkwFQBkNKcltURddMXzI.jpg">
-                <character cast_id="10">Gimli</character>
-            </actor>
-            <actor id="16382" name="Peter Woodthorpe">
-                <character cast_id="11">Gollum</character>
-            </actor>
-            <actor id="16383" name="Fraser Kerr">
-                <character cast_id="12">Saruman</character>
-            </actor>
-            <actor id="10029" name="André Morell" profile_path="/slGvSoLbXaR1g23Rxj9N2WyKNWi.jpg">
-                <character cast_id="13">Elrond</character>
-            </actor>
-        </actors>
-        <directors>
-            <director id="16384" profile_path="/ngnV4JLjTktcibQUZBmp3WukBxm.jpg">Ralph Bakshi</director>
-        </directors>
-        <production_companies>
-            <production_company id="286">Fantasy Films</production_company>
-        </production_companies>
-        <original_title>The Lord of the Rings</original_title>
-        <budget>4000000</budget>
-        <production_countries>
-            <production_country iso="US">United States of America</production_country>
-        </production_countries>
-        <poster_path>/1l3WpoF7TX9pOprX4XepCXjQXUV.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>67204</_id>
-        <title>Reverse Angle</title>
-        <genres>
-            <genre id="28">Action</genre>
-            <genre id="18">Drama</genre>
-            <genre id="9648">Mystery</genre>
-        </genres>
-        <overview><![CDATA[In the remote, sun soaked Pennsylvanian countryside, Ned Larson - a retired professor and reclusive inventor is killed in an explosion at his home. Soon after, small-time investigative journalist Eve Pretson crawls from the wreckage of a burnt out car nearby. She suffers a complete loss of memory - with no recollection of who she is or anything that preceded the accident. Weak and disorientated, she stops at a gas station for help, but instead witnesses the murder of a local mechanic. How are these events connected? In a desperate search for answers, Eve pieces together the scattered fragments of her life, becoming ever more fearful of all she uncovers.]]></overview>
-        <release_date>2009-05-03</release_date>
-        <spoken_languages>
-            <spoken_languages iso="en">English</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <actors>
-            <actor id="2684" name="Emmanuelle Vaugier" profile_path="/k8bjOJmREhKUHeUj33Sihnk89V9.jpg">
-                <character cast_id="3">Eve Pretson</character>
-            </actor>
-            <actor id="44098" name="Anthony Lemke" profile_path="/mH36sR7uZUW39RjENzEjUJ2209A.jpg">
-                <character cast_id="4">Harry Griggs</character>
-            </actor>
-            <actor id="21292" name="Alain Goulem">
-                <character cast_id="5">Black</character>
-            </actor>
-            <actor id="203315" name="David Patrick Green">
-                <character cast_id="6">Murray</character>
-            </actor>
-            <actor id="7014" name="Michel Perron" profile_path="/qHx0U6EattCgT6m46f9RXwRlTya.jpg">
-                <character cast_id="7">Ned Larfield</character>
-            </actor>
-            <actor id="208091" name="Marc Marans">
-                <character cast_id="8">Al Petrenko</character>
-            </actor>
-            <actor id="115595" name="Carlo Mestroni" profile_path="/pDqKSIyzd1xQCg9aQbHqZmZyTRN.jpg">
-                <character cast_id="9">Percy Williams</character>
-            </actor>
-            <actor id="108555" name="Matt Silver">
-                <character cast_id="10">Barrett</character>
-            </actor>
-            <actor id="548202" name="Barry Blake">
-                <character cast_id="11">Atwood</character>
-            </actor>
-            <actor id="207823" name="Richard Robitaille">
-                <character cast_id="12">Bob Hoffman</character>
-            </actor>
-            <actor id="548203" name="Kim Doucet">
-                <character cast_id="13">Female Bartender</character>
-            </actor>
-            <actor id="101219" name="Heidi Hawkins" profile_path="/7TlBzbFVi9fd5tqVqNMGGgk8fOo.jpg">
-                <character cast_id="14">Cocktail Waitress</character>
-            </actor>
-            <actor id="175913" name="Brittany Drisdelle">
-                <character cast_id="15">Janie Finley</character>
-            </actor>
-            <actor id="548204" name="Miranda Handford">
-                <character cast_id="16">Margot Wilmark</character>
-            </actor>
-            <actor id="42600" name="Mark Lambert">
-                <character cast_id="17">Sergeant Mike Pretson</character>
-            </actor>
-        </actors>
-        <directors>
-            <director id="228282">Philippe Gagnon</director>
-        </directors>
-        <production_companies/>
-        <original_title>Reverse Angle</original_title>
-        <production_countries/>
-        <poster_path>/cLCD41wUOrmRe07PEW5wrKQHCvZ.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>76518</_id>
-        <title>Bez Muzhchin</title>
-        <genres/>
-        <overview><![CDATA[Пассажиры вечернего рейса пристегнули ремни и приготовились к взлету.Но полет отложили до утра. Пассажиры отстегнули ремни и вышли из аэропорта. Под светом фонаря поблескивали капли косого дождя. В луже отразились два женских силуэта. Две женщины, две случайные попутчицы отправились в путешествие длиной в московскую ночь…Они меняют машины и настроение, мчатся по кольцевым и бульварам, смеются и плачут. Кажется, они могут позволить себе все в эту странную ночь, словно выпавшую из реальной жизни. Они могут все: страдать, любить, ненавидеть. Они не могут только одного — разойтись. Ими движет одна идея, одна мысль, одна страсть, и имя ее МУЖЧИНА.]]></overview>
-        <vote_average>5.0</vote_average>
-        <vote_count>1</vote_count>
-        <release_date>2011-11-11</release_date>
-        <runtime>74</runtime>
-        <spoken_languages>
-            <spoken_languages iso="ru">Pусский</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <actors>
-            <actor id="500625" name="Nadezhda Mikhalkova" profile_path="/g9Dc4yh5UdFvTQBkmkBxMo3lcpH.jpg">
-                <character cast_id="2"/>
-            </actor>
-            <actor id="235975" name="Vera Voronkova" profile_path="/7fPQNSZwff6gAzIS7idDCrP4Yae.jpg">
-                <character cast_id="3"/>
-            </actor>
-            <actor id="86726" name="Mikhail Porechenkov" profile_path="/lKLpUdTXC7xkvLWhUVTDZIehqPx.jpg">
-                <character cast_id="4"/>
-            </actor>
-            <actor id="101423" name="Artur Smolyaninov" profile_path="/vXhhv6P1CkMrW3xsrkBJkAS4To2.jpg">
-                <character cast_id="5"/>
-            </actor>
-            <actor id="30405" name="Sergey Gazarov" profile_path="/cKi0Fvj2jWuB8I8Tgn17MwhsvOW.jpg">
-                <character cast_id="6"/>
-            </actor>
-            <actor id="113331" name="Leonid Gromov" profile_path="/d8FFNPw1vSJU2MwZrmdV0WS3UR.jpg">
-                <character cast_id="7"/>
-            </actor>
-            <actor id="81002" name="Mikhail Evlanov" profile_path="/wCQvD4ZyIaPYnyCv1N5gRj5baGp.jpg">
-                <character cast_id="8"/>
-            </actor>
-            <actor id="77666" name="Anton Shagin" profile_path="/tmAjRhBMoG7cI5F2Oxn0oW3eNKl.jpg">
-                <character cast_id="9"/>
-            </actor>
-        </actors>
-        <directors>
-            <director id="562717">Rezo Gigineishvili</director>
-        </directors>
-        <production_companies/>
-        <original_title>Без мужчин</original_title>
-        <production_countries>
-            <production_country iso="RU">Russian Federation</production_country>
-        </production_countries>
-        <poster_path>/mrOwDjmisUBa2rQV2zyVgatUpN4.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>86776</_id>
-        <title>Beautiful MILF</title>
-        <genres/>
-        <release_date>2009-09-01</release_date>
-        <spoken_languages/>
-        <status>Released</status>
-        <actors>
-            <actor id="933702" name="John Cruise">
-                <character cast_id="1000"/>
-            </actor>
-            <actor id="928874" name="Cameron Cruz" profile_path="/v8fQLEGuqxbmve13vn5sAxPvCqk.jpg">
-                <character cast_id="1001"/>
-            </actor>
-            <actor id="232177" name="Mandy Bright" profile_path="/8AjyF8JZwa3F1pjjUoBtClFSpMs.jpg">
-                <character cast_id="1002"/>
-            </actor>
-            <actor id="233153" name="Maria Belluci" profile_path="/mifgnp4sV5sOq2FQV9StfA7JLSr.jpg">
-                <character cast_id="1003"/>
-            </actor>
-            <actor id="139980" name="James Brossmann" profile_path="/sXvL12wXcMdrdjTqhhEh41erJSi.jpg">
-                <character cast_id="1004"/>
-            </actor>
-            <actor id="566061" name="Winnie">
-                <character cast_id="1005"/>
-            </actor>
-            <actor id="235459" name="Csoky Ice" profile_path="/gsaS7ah3Ba4nwIptEzFCqIT8zz6.jpg">
-                <character cast_id="1006"/>
-            </actor>
-            <actor id="139971" name="Lauro Giotto" profile_path="/ghckz14ylV64kVBOOq9GNJZycvi.jpg">
-                <character cast_id="1007"/>
-            </actor>
-            <actor id="566056" name="Mugur" profile_path="/sKHY4WuhWYyNxs1vOuF7DyBKhqI.jpg">
-                <character cast_id="1008"/>
-            </actor>
-            <actor id="232178" name="Lisa Sparkle" profile_path="/kDvihETmCx0cfkqQmDaynrIUwMH.jpg">
-                <character cast_id="1009"/>
-            </actor>
-            <actor id="582219" name="Tanya Tate" profile_path="/6v8Yb0Dfw6f0ShGHaxTZvBvOCQt.jpg">
-                <character cast_id="1010"/>
-            </actor>
-            <actor id="572639" name="Clarke Kent">
-                <character cast_id="1011"/>
-            </actor>
-        </actors>
-        <directors>
-            <director id="581739" profile_path="/nqBCDGMkHF175a8MBCfoC9pP4qE.jpg">Kendo</director>
-        </directors>
-        <production_companies/>
-        <original_title>Beautiful MILF</original_title>
-        <production_countries/>
-        <poster_path>/eWpDwJrIgcYejpUuP33tjE7waaU.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>95988</_id>
-        <title>Neutron Battles the Karate Assassins</title>
-        <genres/>
-        <overview><![CDATA[Superhero wrestler Neutron battles a gang of robotic assassins who use their hands and feet as deadly weapons.]]></overview>
-        <release_date>1965-08-06</release_date>
-        <runtime>85</runtime>
-        <spoken_languages>
-            <spoken_languages iso="es">Español</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <actors>
-            <actor id="102304" name="Wolf Ruvinskis">
-                <character cast_id="2">Neutron</character>
-            </actor>
-        </actors>
-        <directors>
-            <director id="105145">Alfredo B. Crevenna</director>
-        </directors>
-        <production_companies/>
-        <original_title>Los asesinos del karate</original_title>
-        <production_countries/>
-        <poster_path>/qaMXCKLGticEVhWX7SXsS3ZsRku.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>151360</_id>
-        <title>Don Kirshner's Rock Concert: Black Sabbath</title>
-        <genres/>
-        <overview><![CDATA[Filmed at the height of their fame, and including all four original members of the band, Black Sabbath performs masterfully in front of an eager Santa Monica crowd.]]></overview>
-        <release_date>1975-09-04</release_date>
-        <runtime>25</runtime>
-        <spoken_languages/>
-        <status>Released</status>
-        <actors/>
-        <directors/>
-        <production_companies/>
-        <original_title>Don Kirshner's Rock Concert: Black Sabbath</original_title>
-        <production_countries/>
-        <poster_path>/e9cK4uPkMtAbpA8wnsKBgXHrjdu.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>219519</_id>
-        <title>House Cleaning Blues</title>
-        <genres/>
-        <overview><![CDATA[Housecleaning blues are just what Betty Boop has the morning after a wild party. Grampy to the rescue!]]></overview>
-        <release_date>1937-01-14</release_date>
-        <spoken_languages/>
-        <status>Released</status>
-        <actors/>
-        <directors>
-            <director id="143463">Dave Fleischer</director>
-        </directors>
-        <production_companies/>
-        <original_title>House Cleaning Blues</original_title>
-        <production_countries/>
-        <poster_path>/uPD1z3eDGonwgq9qLwu83hBVsTO.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>233293</_id>
-        <title>Girls' Dormitory</title>
-        <genres/>
-        <overview><![CDATA[In a complex story, various sexual escapades-- heterosexual and lesbian-- take place at a hospital.]]></overview>
-        <release_date>1967-05-16</release_date>
-        <runtime>73</runtime>
-        <spoken_languages>
-            <spoken_languages iso="ja">日本語</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <actors>
-            <actor id="1268620" name="Midori Hinoki">
-                <character cast_id="1">Masako</character>
-            </actor>
-            <actor id="1119025" name="Michiko Sakyō">
-                <character cast_id="2">Woman doctor</character>
-            </actor>
-            <actor id="1119036" name="Kemi Ichiboshi">
-                <character cast_id="3">Kimiyo</character>
-            </actor>
-            <actor id="1087690" name="Kazuko Shirakawa">
-                <character cast_id="4">Ayumi</character>
-            </actor>
-            <actor id="1268755" name="Yôko Shimura">
-                <character cast_id="5">Head nurse</character>
-            </actor>
-        </actors>
-        <directors>
-            <director id="1045509">Kan Mukai</director>
-        </directors>
-        <production_companies/>
-        <original_title>Joshiryô</original_title>
-        <production_countries>
-            <production_country iso="JP">Japan</production_country>
-        </production_countries>
-        <poster_path>/xiezFiV8wr6yVsVCS2K8s0fZS1R.jpg</poster_path>
-    </movie>
-    <movie>
-        <_id>265444</_id>
-        <title>Those Who Go Those Who Stay</title>
-        <genres/>
-        <overview><![CDATA[Rain on a window pane, a fire truck, a tomcat with innumerable offspring: it is an intentionally unintentional gaze that allows for chance encounters, for stories and memories - leads that Ruth Beckermann follows across Europe and the Mediterranean. Nigerian asylum seekers in Sicily, an Arab musician in Galilee, nationalists drunk on beer in Vienna, the Capitoline Wolf, and three veiled young women trying for minutes to cross a busy road in Alexandria. Threads, cloth and textiles pop up like book marks in a fabric of movement, of traveling or seeking refuge.]]></overview>
-        <release_date>2013-11-25</release_date>
-        <runtime>75</runtime>
-        <spoken_languages/>
-        <status>Released</status>
-        <actors/>
-        <directors/>
-        <production_companies/>
-        <original_title>Those Who Go Those Who Stay</original_title>
-        <production_countries>
-            <production_country iso="AT">Austria</production_country>
-        </production_countries>
-    </movie>
-    <movie>
-        <_id>279721</_id>
-        <title>Pancho Barnes</title>
-        <genres/>
-        <overview><![CDATA[A made for TV movie in which Valerie Bertinelli portrays Florence Pancho Barnes, a bored socialite who decides to learn to fly]]></overview>
-        <release_date>1988-01-01</release_date>
-        <spoken_languages/>
-        <status>Released</status>
-        <actors/>
-        <directors/>
-        <production_companies/>
-        <original_title>Pancho Barnes</original_title>
-        <production_countries/>
-    </movie>
-    <movie>
-        <_id>287491</_id>
-        <title>Itsi Bitsi</title>
-        <genres/>
-        <overview><![CDATA[1962. A young generation rebels against the Establishment. Peace activist Eik Skaløe meets Iben and falls head over heels in love, but Iben refuses to commit herself to one man only. Desperate, Eik tries to win her over by transforming from poet to writer, nomad, junkie and eventually lead singer in the destined-to-become-legendary band STEPPEULVENE.]]></overview>
-        <release_date>2015-01-15</release_date>
-        <runtime>107</runtime>
-        <spoken_languages>
-            <spoken_languages iso="da">Dansk</spoken_languages>
-        </spoken_languages>
-        <status>Released</status>
-        <actors/>
-        <directors>
-            <director id="56195" profile_path="/zn8j11Fi8aNwe4Gz5GrtyEC4wLW.jpg">Ole Christian Madsen</director>
-        </directors>
-        <production_companies/>
-        <original_title>Itsi Bitsi</original_title>
-        <production_countries>
-            <production_country iso="DK">Denmark</production_country>
-            <production_country iso="HR">Croatia</production_country>
-            <production_country iso="SE">Sweden</production_country>
-        </production_countries>
-    </movie>
+   <movie>
+      <_id>120</_id>
+      <title>The Lord of the Rings: The Fellowship of the Ring</title>
+      <genres>
+         <genre id="28">Action</genre>
+         <genre id="12">Adventure</genre>
+         <genre id="14">Fantasy</genre>
+      </genres>
+      <overview><![CDATA[Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.]]></overview>
+      <vote_average>7.4</vote_average>
+      <vote_count>3417</vote_count>
+      <release_date>2001-12-19</release_date>
+      <runtime>178</runtime>
+      <spoken_languages>
+         <spoken_language iso="en">English</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <tagline><![CDATA[One ring to rule them all]]></tagline>
+      <actors>
+         <actor id="109" name="Elijah Wood" profile_path="/c4fB3WAS7jN78rihw2kB81v6sez.jpg">
+            <character cast_id="28">Frodo Baggins</character>
+         </actor>
+         <actor id="1327" name="Ian McKellen" profile_path="/c51mP46oPgAgFf7bFWVHlScZynM.jpg">
+            <character cast_id="29">Gandalf the Grey</character>
+         </actor>
+         <actor id="110" name="Viggo Mortensen" profile_path="/kmagPINweYf2eZwJVpxa0XYJz9y.jpg">
+            <character cast_id="30">Aragorn</character>
+         </actor>
+         <actor id="882" name="Liv Tyler" profile_path="/hjZTqH1qXSG5WFDmtOqEgtuTJOZ.jpg">
+            <character cast_id="31">Arwen Evenstar</character>
+         </actor>
+         <actor id="114" name="Orlando Bloom" profile_path="/jLF5zDGkxhSkea49CeOrpyMFipN.jpg">
+            <character cast_id="32">Legolas</character>
+         </actor>
+         <actor id="655" name="John Rhys-Davies" profile_path="/zZ67PuoFfik9QlZyfaEsFBC1yVJ.jpg">
+            <character cast_id="33">Gimli</character>
+         </actor>
+         <actor id="48" name="Sean Bean" profile_path="/arkVBI4myH8kvxFc7QIapy2DuT6.jpg">
+            <character cast_id="34">Boromir</character>
+         </actor>
+         <actor id="113" name="Christopher Lee" profile_path="/7YwjaHLmuy1isK6oh3TnBDd6Oml.jpg">
+            <character cast_id="35">Saruman</character>
+         </actor>
+         <actor id="1328" name="Sean Astin" profile_path="/jqF72oav6vmGAWl33GNO6EpZtwA.jpg">
+            <character cast_id="36">Samwise 'Sam' Gamgee</character>
+         </actor>
+         <actor id="1329" name="Billy Boyd" profile_path="/nwNHDM67VYAb87sjSqYQVWaZKyK.jpg">
+            <character cast_id="37">Peregrin 'Pippin' Took</character>
+         </actor>
+         <actor id="1330" name="Dominic Monaghan" profile_path="/sXkqoK3v1nfCudXIcxKVwDc0imw.jpg">
+            <character cast_id="38">Meriadoc 'Merry' Brandybuck</character>
+         </actor>
+         <actor id="1331" name="Hugo Weaving" profile_path="/ysED1kp94bpnweNVaDoVQQ6iy8X.jpg">
+            <character cast_id="39">Elrond</character>
+         </actor>
+         <actor id="112" name="Cate Blanchett" profile_path="/wkWpYrtA1QCNv4B6L6fBTMRBiQ9.jpg">
+            <character cast_id="40">Galadriel</character>
+         </actor>
+         <actor id="65" name="Ian Holm" profile_path="/uq6Wx7PaLgaw969avH7tLHnSb0Q.jpg">
+            <character cast_id="41">Bilbo Baggins</character>
+         </actor>
+         <actor id="1332" name="Craig Parker" profile_path="/r6hcUPziMqlMCfBELdNj3OuZeud.jpg">
+            <character cast_id="42">Haldir</character>
+         </actor>
+         <actor id="1365" name="Lawrence Makoare" profile_path="/yVHInaWXU4ynUnNE3qa59hvsFAJ.jpg">
+            <character cast_id="43">Lurtz</character>
+         </actor>
+         <actor id="1366" name="Sala Baker" profile_path="/vYXFCRoosgksT3F2A9SsiFn3pID.jpg">
+            <character cast_id="44">Sauron</character>
+         </actor>
+         <actor id="1333" name="Andy Serkis" profile_path="/olYcaJoZuHVW92gZgtVMUWGqMR8.jpg">
+            <character cast_id="46">Gollum</character>
+         </actor>
+         <actor id="965278" name="Sarah McLeod" profile_path="/8BFVSAmPX0sjyqelYCtJktF0Vk6.jpg">
+            <character cast_id="47">Rose 'Rosie' Cotton</character>
+         </actor>
+         <actor id="20982" name="Marton Csokas" profile_path="/tR1GSfLJ7oukJ4sB62MlfVbCGzg.jpg">
+            <character cast_id="49">Celeborn</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="108" profile_path="/hTUqZAjH7SHXb0EXEA1I9EoJFnF.jpg">Peter Jackson</director>
+      </directors>
+      <production_companies>
+         <production_company id="12">New Line Cinema</production_company>
+         <production_company id="11">WingNut Films</production_company>
+         <production_company id="5237">The Saul Zaentz Company</production_company>
+      </production_companies>
+      <original_title>The Lord of the Rings: The Fellowship of the Ring</original_title>
+      <budget>93000000</budget>
+      <revenue>871368364</revenue>
+      <production_countries>
+         <production_country iso="NZ">New Zealand</production_country>
+         <production_country iso="US">United States of America</production_country>
+      </production_countries>
+      <homepage>http://www.lordoftherings.net/</homepage>
+      <poster_path>/9HG6pINW1KoFTAKY3LdybkoOKAm.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>121</_id>
+      <title>The Lord of the Rings: The Two Towers</title>
+      <genres>
+         <genre id="28">Action</genre>
+         <genre id="12">Adventure</genre>
+         <genre id="14">Fantasy</genre>
+      </genres>
+      <overview><![CDATA[Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.]]></overview>
+      <vote_average>7.4</vote_average>
+      <vote_count>2786</vote_count>
+      <release_date>2002-12-18</release_date>
+      <runtime>179</runtime>
+      <spoken_languages>
+         <spoken_language iso="en">English</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <tagline><![CDATA[A New Power Is Rising.]]></tagline>
+      <actors>
+         <actor id="109" name="Elijah Wood" profile_path="/c4fB3WAS7jN78rihw2kB81v6sez.jpg">
+            <character cast_id="13">Frodo Baggins</character>
+         </actor>
+         <actor id="1327" name="Ian McKellen" profile_path="/c51mP46oPgAgFf7bFWVHlScZynM.jpg">
+            <character cast_id="14">Gandalf the White</character>
+         </actor>
+         <actor id="110" name="Viggo Mortensen" profile_path="/kmagPINweYf2eZwJVpxa0XYJz9y.jpg">
+            <character cast_id="15">Aragorn</character>
+         </actor>
+         <actor id="882" name="Liv Tyler" profile_path="/hjZTqH1qXSG5WFDmtOqEgtuTJOZ.jpg">
+            <character cast_id="16">Arwen Evenstar</character>
+         </actor>
+         <actor id="114" name="Orlando Bloom" profile_path="/jLF5zDGkxhSkea49CeOrpyMFipN.jpg">
+            <character cast_id="17">Legolas</character>
+         </actor>
+         <actor id="655" name="John Rhys-Davies" profile_path="/zZ67PuoFfik9QlZyfaEsFBC1yVJ.jpg">
+            <character cast_id="18">Gimli / Voice of Treebeard</character>
+         </actor>
+         <actor id="113" name="Christopher Lee" profile_path="/7YwjaHLmuy1isK6oh3TnBDd6Oml.jpg">
+            <character cast_id="19">Saruman</character>
+         </actor>
+         <actor id="1328" name="Sean Astin" profile_path="/ezv9hRbgrR6Uuz4xWqX22cpiRXJ.jpg">
+            <character cast_id="20">Sam Gamgee</character>
+         </actor>
+         <actor id="1329" name="Billy Boyd" profile_path="/vNhUoHhBqyjDVuc0nxJHanTKA2E.jpg">
+            <character cast_id="21">Peregrin 'Pippin' Took</character>
+         </actor>
+         <actor id="1330" name="Dominic Monaghan" profile_path="/sXkqoK3v1nfCudXIcxKVwDc0imw.jpg">
+            <character cast_id="22">Meriadoc 'Merry' Brandybuck</character>
+         </actor>
+         <actor id="1331" name="Hugo Weaving" profile_path="/ysED1kp94bpnweNVaDoVQQ6iy8X.jpg">
+            <character cast_id="23">Elrond</character>
+         </actor>
+         <actor id="1332" name="Craig Parker" profile_path="/amJPcZnpWIABjbaN5FzW5vvTIEk.jpg">
+            <character cast_id="24">Haldir</character>
+         </actor>
+         <actor id="1369" name="Bernard Hill" profile_path="/vnepbY1BOJ2AX20bkngAT7ehJP.jpg">
+            <character cast_id="25">Théoden</character>
+         </actor>
+         <actor id="1333" name="Andy Serkis" profile_path="/olYcaJoZuHVW92gZgtVMUWGqMR8.jpg">
+            <character cast_id="26">Gollum</character>
+         </actor>
+         <actor id="1370" name="Brad Dourif" profile_path="/jfvemADVHzTWu5HiOEhYmFfSpWt.jpg">
+            <character cast_id="27">Gríma Wormtongue</character>
+         </actor>
+         <actor id="502" name="Miranda Otto" profile_path="/l3BzUjJMK3JbqvCiCIFP4beMChS.jpg">
+            <character cast_id="28">Éowyn</character>
+         </actor>
+         <actor id="1371" name="David Wenham" profile_path="/hOG5mAd5pzT30V6adkwkpe87HY7.jpg">
+            <character cast_id="29">Faramir</character>
+         </actor>
+         <actor id="1372" name="Karl Urban" profile_path="/tHYOUO33K7iaDw8nXyqRvDIkVuM.jpg">
+            <character cast_id="30">Éomer</character>
+         </actor>
+         <actor id="112" name="Cate Blanchett" profile_path="/wkWpYrtA1QCNv4B6L6fBTMRBiQ9.jpg">
+            <character cast_id="49">Galadriel</character>
+         </actor>
+         <actor id="941439" name="Olivia Tennet" profile_path="/hv8zCPSiju8YpVXXjv17osV2pV7.jpg">
+            <character cast_id="52">Freda</character>
+         </actor>
+         <actor id="48" name="Sean Bean" profile_path="/arkVBI4myH8kvxFc7QIapy2DuT6.jpg">
+            <character cast_id="53">Boromir</character>
+         </actor>
+         <actor id="173451" name="Jed Brophy" profile_path="/xfEiaREY2RJQosyGnGuGDcWONsX.jpg">
+            <character cast_id="54">Sharku / Snaga</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="108" profile_path="/hTUqZAjH7SHXb0EXEA1I9EoJFnF.jpg">Peter Jackson</director>
+      </directors>
+      <production_companies>
+         <production_company id="12">New Line Cinema</production_company>
+         <production_company id="11">WingNut Films</production_company>
+         <production_company id="5237">The Saul Zaentz Company</production_company>
+      </production_companies>
+      <original_title>The Lord of the Rings: The Two Towers</original_title>
+      <budget>79000000</budget>
+      <revenue>926287400</revenue>
+      <production_countries>
+         <production_country iso="NZ">New Zealand</production_country>
+         <production_country iso="US">United States of America</production_country>
+      </production_countries>
+      <homepage>http://www.lordoftherings.net/</homepage>
+      <poster_path>/5o5fv1dHG7vWoH2hmqwihVPBoBm.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>122</_id>
+      <title>The Lord of the Rings: The Return of the King</title>
+      <genres>
+         <genre id="28">Action</genre>
+         <genre id="12">Adventure</genre>
+         <genre id="14">Fantasy</genre>
+      </genres>
+      <overview><![CDATA[Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam bring the ring closer to the heart of Mordor, the dark lord's realm.]]></overview>
+      <vote_average>7.5</vote_average>
+      <vote_count>3215</vote_count>
+      <release_date>2003-12-17</release_date>
+      <runtime>201</runtime>
+      <spoken_languages>
+         <spoken_language iso="en">English</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <tagline><![CDATA[The eye of the enemy is moving.]]></tagline>
+      <actors>
+         <actor id="109" name="Elijah Wood" profile_path="/c4fB3WAS7jN78rihw2kB81v6sez.jpg">
+            <character cast_id="12">Frodo Baggins</character>
+         </actor>
+         <actor id="1327" name="Ian McKellen" profile_path="/c51mP46oPgAgFf7bFWVHlScZynM.jpg">
+            <character cast_id="13">Gandalf the White</character>
+         </actor>
+         <actor id="110" name="Viggo Mortensen" profile_path="/kmagPINweYf2eZwJVpxa0XYJz9y.jpg">
+            <character cast_id="14">Aragorn</character>
+         </actor>
+         <actor id="882" name="Liv Tyler" profile_path="/hjZTqH1qXSG5WFDmtOqEgtuTJOZ.jpg">
+            <character cast_id="15">Arwen Evenstar</character>
+         </actor>
+         <actor id="114" name="Orlando Bloom" profile_path="/jLF5zDGkxhSkea49CeOrpyMFipN.jpg">
+            <character cast_id="16">Legolas</character>
+         </actor>
+         <actor id="655" name="John Rhys-Davies" profile_path="/zZ67PuoFfik9QlZyfaEsFBC1yVJ.jpg">
+            <character cast_id="17">Gimli &amp; Treebeard (Voice)</character>
+         </actor>
+         <actor id="1328" name="Sean Astin" profile_path="/jqF72oav6vmGAWl33GNO6EpZtwA.jpg">
+            <character cast_id="18">Sam Gamgee</character>
+         </actor>
+         <actor id="1329" name="Billy Boyd" profile_path="/nwNHDM67VYAb87sjSqYQVWaZKyK.jpg">
+            <character cast_id="19">Peregrin 'Pippin' Took</character>
+         </actor>
+         <actor id="1330" name="Dominic Monaghan" profile_path="/sXkqoK3v1nfCudXIcxKVwDc0imw.jpg">
+            <character cast_id="20">Meriadoc 'Merry' Brandybuck</character>
+         </actor>
+         <actor id="1331" name="Hugo Weaving" profile_path="/ysED1kp94bpnweNVaDoVQQ6iy8X.jpg">
+            <character cast_id="21">Elrond</character>
+         </actor>
+         <actor id="1369" name="Bernard Hill" profile_path="/meAkjuYbqLTPEIiXCOD7cZGovhT.jpg">
+            <character cast_id="22">Théoden, King of Rohan</character>
+         </actor>
+         <actor id="1333" name="Andy Serkis" profile_path="/olYcaJoZuHVW92gZgtVMUWGqMR8.jpg">
+            <character cast_id="23">Gollum</character>
+         </actor>
+         <actor id="502" name="Miranda Otto" profile_path="/l3BzUjJMK3JbqvCiCIFP4beMChS.jpg">
+            <character cast_id="24">Éowyn</character>
+         </actor>
+         <actor id="1371" name="David Wenham" profile_path="/hOG5mAd5pzT30V6adkwkpe87HY7.jpg">
+            <character cast_id="25">Faramir</character>
+         </actor>
+         <actor id="1372" name="Karl Urban" profile_path="/tHYOUO33K7iaDw8nXyqRvDIkVuM.jpg">
+            <character cast_id="26">Éomer</character>
+         </actor>
+         <actor id="1381" name="John Noble" profile_path="/4A2mSS9Bea5I2bNur8ZlQZXu0H9.jpg">
+            <character cast_id="27">Denethor</character>
+         </actor>
+         <actor id="65" name="Ian Holm" profile_path="/uq6Wx7PaLgaw969avH7tLHnSb0Q.jpg">
+            <character cast_id="28">Bilbo Baggins</character>
+         </actor>
+         <actor id="112" name="Cate Blanchett" profile_path="/wkWpYrtA1QCNv4B6L6fBTMRBiQ9.jpg">
+            <character cast_id="29">Galadriel</character>
+         </actor>
+         <actor id="1365" name="Lawrence Makoare" profile_path="/yVHInaWXU4ynUnNE3qa59hvsFAJ.jpg">
+            <character cast_id="30">Gothmog &amp; Witchking of Angmar</character>
+         </actor>
+         <actor id="1382" name="Paul Norell" profile_path="/dLjsu7vVkgXLLQ8QfqRb6iDRxvH.jpg">
+            <character cast_id="31">King of the Dead</character>
+         </actor>
+         <actor id="1383" name="Thomas Robins" profile_path="/p8AQeI7SXxAIjUpVEpv9q8ZxGD0.jpg">
+            <character cast_id="32">Deagol</character>
+         </actor>
+         <actor id="965278" name="Sarah McLeod" profile_path="/8BFVSAmPX0sjyqelYCtJktF0Vk6.jpg">
+            <character cast_id="49">Rosie Cotton</character>
+         </actor>
+         <actor id="48" name="Sean Bean" profile_path="/arkVBI4myH8kvxFc7QIapy2DuT6.jpg">
+            <character cast_id="50">Boromir</character>
+         </actor>
+         <actor id="20982" name="Marton Csokas" profile_path="/tR1GSfLJ7oukJ4sB62MlfVbCGzg.jpg">
+            <character cast_id="58">Celeborn</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="108" profile_path="/hTUqZAjH7SHXb0EXEA1I9EoJFnF.jpg">Peter Jackson</director>
+      </directors>
+      <production_companies>
+         <production_company id="12">New Line Cinema</production_company>
+         <production_company id="11">WingNut Films</production_company>
+      </production_companies>
+      <original_title>The Lord of the Rings: The Return of the King</original_title>
+      <budget>94000000</budget>
+      <revenue>1118888979</revenue>
+      <production_countries>
+         <production_country iso="NZ">New Zealand</production_country>
+         <production_country iso="US">United States of America</production_country>
+      </production_countries>
+      <homepage>http://www.lordoftherings.net</homepage>
+      <poster_path>/50LoR9gJhbWZ5PpoHgi8MNTYgzd.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>123</_id>
+      <title>The Lord of the Rings</title>
+      <genres>
+         <genre id="16">Animation</genre>
+      </genres>
+      <overview><![CDATA[An animated fantasy film from 1978 based on the first half of J.R.R Tolkien’s Lord of the Rings novel. The film was mainly filmed using rotoscoping, meaning it was filmed in live action sequences with real actors and then each frame was individually animated.]]></overview>
+      <vote_average>6.1</vote_average>
+      <vote_count>27</vote_count>
+      <release_date>1978-11-15</release_date>
+      <runtime>132</runtime>
+      <spoken_languages>
+         <spoken_language iso="en">English</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <tagline><![CDATA[J.R.R. Tolkien's The Lord of the Rings]]></tagline>
+      <actors>
+         <actor id="16270" name="Christopher Guard">
+            <character cast_id="1">Frodo Beutlin</character>
+         </actor>
+         <actor id="16271" name="William Squire">
+            <character cast_id="2">Gandalf</character>
+         </actor>
+         <actor id="16272" name="Michael Scholes">
+            <character cast_id="3">Sam</character>
+         </actor>
+         <actor id="5049" name="John Hurt" profile_path="/rpuH2YRLpxJjMxHq4T1QdOSVtlN.jpg">
+            <character cast_id="4">Aragorn</character>
+         </actor>
+         <actor id="16273" name="Simon Chandler" profile_path="/j30wLavbX35RxxtjvMvCNK8Exsw.jpg">
+            <character cast_id="5">Merry</character>
+         </actor>
+         <actor id="16274" name="Dominic Guard">
+            <character cast_id="6">Pippin</character>
+         </actor>
+         <actor id="16275" name="Norman Bird" profile_path="/lHj58cWdvdkleI7lDTpRHnwqKP4.jpg">
+            <character cast_id="7">Bilbo Beutlin</character>
+         </actor>
+         <actor id="16380" name="Michael Graham Cox">
+            <character cast_id="8">Boromir</character>
+         </actor>
+         <actor id="6" name="Anthony Daniels" profile_path="/bYxaDdwT5BIQk0dl6NkXIjLgxL8.jpg">
+            <character cast_id="9">Legolas</character>
+         </actor>
+         <actor id="16381" name="David Buck" profile_path="/3H40jRDVkwFQBkNKcltURddMXzI.jpg">
+            <character cast_id="10">Gimli</character>
+         </actor>
+         <actor id="16382" name="Peter Woodthorpe">
+            <character cast_id="11">Gollum</character>
+         </actor>
+         <actor id="16383" name="Fraser Kerr">
+            <character cast_id="12">Saruman</character>
+         </actor>
+         <actor id="10029" name="André Morell" profile_path="/slGvSoLbXaR1g23Rxj9N2WyKNWi.jpg">
+            <character cast_id="13">Elrond</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="16384" profile_path="/ngnV4JLjTktcibQUZBmp3WukBxm.jpg">Ralph Bakshi</director>
+      </directors>
+      <production_companies>
+         <production_company id="286">Fantasy Films</production_company>
+      </production_companies>
+      <original_title>The Lord of the Rings</original_title>
+      <budget>4000000</budget>
+      <production_countries>
+         <production_country iso="US">United States of America</production_country>
+      </production_countries>
+      <poster_path>/1l3WpoF7TX9pOprX4XepCXjQXUV.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>61832</_id>
+      <title>Aestivation 2</title>
+      <genres>
+         <genre id="9805">Sport</genre>
+      </genres>
+      <vote_average>2.0</vote_average>
+      <vote_count>1</vote_count>
+      <status>Released</status>
+      <actors>
+         <actor id="234456" name="Eva Patscheider">
+            <character cast_id="1000"/>
+         </actor>
+         <actor id="234457" name="Sven Kueenle">
+            <character cast_id="1001"/>
+         </actor>
+         <actor id="234426" name="Luggi Brucic">
+            <character cast_id="1002"/>
+         </actor>
+         <actor id="234458" name="Niklas Karlstrom">
+            <character cast_id="1003"/>
+         </actor>
+         <actor id="234459" name="Seb Garhammer">
+            <character cast_id="1004"/>
+         </actor>
+         <actor id="234460" name="Simon Abt">
+            <character cast_id="1005"/>
+         </actor>
+         <actor id="234461" name="Tobi Reindl">
+            <character cast_id="1006"/>
+         </actor>
+         <actor id="234462" name="Thomas Hlawitschka">
+            <character cast_id="1007"/>
+         </actor>
+         <actor id="234463" name="Chris Benchetler">
+            <character cast_id="1008"/>
+         </actor>
+         <actor id="234464" name="Nico Zacek">
+            <character cast_id="1009"/>
+         </actor>
+         <actor id="234465" name="Mc Fly">
+            <character cast_id="1010"/>
+         </actor>
+         <actor id="234467" name="Matthias Haunolder">
+            <character cast_id="1011"/>
+         </actor>
+         <actor id="234468" name="Henrik Harlaut">
+            <character cast_id="1012"/>
+         </actor>
+         <actor id="234469" name="Beni Mayr">
+            <character cast_id="1013"/>
+         </actor>
+         <actor id="234471" name="Paddy Graham">
+            <character cast_id="1014"/>
+         </actor>
+         <actor id="234472" name="Xavier Gehring">
+            <character cast_id="1015"/>
+         </actor>
+         <actor id="234473" name="Oscar Scherlin">
+            <character cast_id="1016"/>
+         </actor>
+         <actor id="234474" name="Laurent Favre">
+            <character cast_id="1017"/>
+         </actor>
+         <actor id="234475" name="Lena Stoffel">
+            <character cast_id="1018"/>
+         </actor>
+         <actor id="234430" name="Tobi Tritscher">
+            <character cast_id="1019"/>
+         </actor>
+         <actor id="234427" name="Fabio Studer">
+            <character cast_id="1020"/>
+         </actor>
+         <actor id="234476" name="Phil Meier">
+            <character cast_id="1021"/>
+         </actor>
+         <actor id="234477" name="Richard Permin">
+            <character cast_id="1022"/>
+         </actor>
+      </actors>
+      <original_title>Aestivation 2</original_title>
+      <poster_path>/iy6cZKj8MiXYZUQpTFKjfIaMRfE.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>76518</_id>
+      <title>Bez Muzhchin</title>
+      <overview><![CDATA[Пассажиры вечернего рейса пристегнули ремни и приготовились к взлету.Но полет отложили до утра. Пассажиры отстегнули ремни и вышли из аэропорта. Под светом фонаря поблескивали капли косого дождя. В луже отразились два женских силуэта. Две женщины, две случайные попутчицы отправились в путешествие длиной в московскую ночь…Они меняют машины и настроение, мчатся по кольцевым и бульварам, смеются и плачут. Кажется, они могут позволить себе все в эту странную ночь, словно выпавшую из реальной жизни. Они могут все: страдать, любить, ненавидеть. Они не могут только одного — разойтись. Ими движет одна идея, одна мысль, одна страсть, и имя ее МУЖЧИНА.]]></overview>
+      <vote_average>5.0</vote_average>
+      <vote_count>1</vote_count>
+      <release_date>2011-11-11</release_date>
+      <runtime>74</runtime>
+      <spoken_languages>
+         <spoken_language iso="ru">Pусский</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <actors>
+         <actor id="500625" name="Nadezhda Mikhalkova" profile_path="/g9Dc4yh5UdFvTQBkmkBxMo3lcpH.jpg">
+            <character cast_id="2"/>
+         </actor>
+         <actor id="235975" name="Vera Voronkova" profile_path="/7fPQNSZwff6gAzIS7idDCrP4Yae.jpg">
+            <character cast_id="3"/>
+         </actor>
+         <actor id="86726" name="Mikhail Porechenkov" profile_path="/lKLpUdTXC7xkvLWhUVTDZIehqPx.jpg">
+            <character cast_id="4"/>
+         </actor>
+         <actor id="101423" name="Artur Smolyaninov" profile_path="/vXhhv6P1CkMrW3xsrkBJkAS4To2.jpg">
+            <character cast_id="5"/>
+         </actor>
+         <actor id="30405" name="Sergey Gazarov" profile_path="/cKi0Fvj2jWuB8I8Tgn17MwhsvOW.jpg">
+            <character cast_id="6"/>
+         </actor>
+         <actor id="113331" name="Leonid Gromov" profile_path="/d8FFNPw1vSJU2MwZrmdV0WS3UR.jpg">
+            <character cast_id="7"/>
+         </actor>
+         <actor id="81002" name="Mikhail Evlanov" profile_path="/wCQvD4ZyIaPYnyCv1N5gRj5baGp.jpg">
+            <character cast_id="8"/>
+         </actor>
+         <actor id="77666" name="Anton Shagin" profile_path="/tmAjRhBMoG7cI5F2Oxn0oW3eNKl.jpg">
+            <character cast_id="9"/>
+         </actor>
+      </actors>
+      <directors>
+         <director id="562717">Rezo Gigineishvili</director>
+      </directors>
+      <original_title>Без мужчин</original_title>
+      <production_countries>
+         <production_country iso="RU">Russian Federation</production_country>
+      </production_countries>
+      <poster_path>/mrOwDjmisUBa2rQV2zyVgatUpN4.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>105184</_id>
+      <title>Trance</title>
+      <genres>
+         <genre id="27">Horror</genre>
+      </genres>
+      <overview><![CDATA[The hero-worship that Simone (Desiree Nosbusch) has for a pop singer is built to a crescendo until she passes out when she finally sees him up-close in a crowd of fans pushing him for autographs. She is later shocked when he lets her know that he does not love her. In an instant, she is caught "in a trance" and feels a murderous urge that is bigger than the both of them.]]></overview>
+      <vote_average>6.0</vote_average>
+      <vote_count>1</vote_count>
+      <release_date>1982-01-01</release_date>
+      <runtime>89</runtime>
+      <spoken_languages>
+         <spoken_language iso="de">Deutsch</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <tagline><![CDATA[An obsession gone mad]]></tagline>
+      <actors>
+         <actor id="22210" name="Désirée Nosbusch" profile_path="/3jwYKbvBSVLMG9CUpCVNBLnSHI3.jpg">
+            <character cast_id="1">Simone</character>
+         </actor>
+         <actor id="1037680" name="Bodo Staiger">
+            <character cast_id="2">R</character>
+         </actor>
+         <actor id="71228" name="Simone Brahmann">
+            <character cast_id="3">Sekretärin</character>
+         </actor>
+         <actor id="1037681" name="Jonas Vischer">
+            <character cast_id="4">Vater</character>
+         </actor>
+         <actor id="1037683" name="Helga Tölle">
+            <character cast_id="5">Mutter</character>
+         </actor>
+         <actor id="123242" name="Klaus Münster">
+            <character cast_id="6">Briefträger</character>
+         </actor>
+         <actor id="1037685" name="Wilfried Blasberg">
+            <character cast_id="7">Autofahrer mit Hund</character>
+         </actor>
+         <actor id="386292" name="Christian Simon">
+            <character cast_id="8">als er selbst</character>
+         </actor>
+         <actor id="16818" name="Joachim Fuchsberger" profile_path="/23huTJnuC9P25WqsQYmcxrulEnb.jpg">
+            <character cast_id="9">als er selbst</character>
+         </actor>
+         <actor id="1037686" name="Thomas Fuchsberger">
+            <character cast_id="10">als er selbst</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="584480">Eckhart Schmidt</director>
+      </directors>
+      <original_title>Der Fan</original_title>
+      <production_countries>
+         <production_country iso="DE">Germany</production_country>
+      </production_countries>
+      <poster_path>/4ZEzfvVHroeINy71IMy8PvfIni9.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>130482</_id>
+      <title>Metallica: Live at Rock in Rio</title>
+      <overview><![CDATA[Rock In Rio Lisboa 2004]]></overview>
+      <release_date>2004-06-04</release_date>
+      <runtime>138</runtime>
+      <status>Released</status>
+      <original_title>Metallica: Live at Rock in Rio</original_title>
+      <poster_path>/l1IjkInyIVyYrsUSXQsADrMPuCn.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>161324</_id>
+      <title>Hex</title>
+      <overview><![CDATA[Set in rural Nebraska following the First World War, six veterans on motorcycles ride into the sleepy little town of Bingo. The locals are friendly until one of the vets beats a local kid in a drag race, after which the six are driven out of town. After coming upon a small farm, the fugitives are allowed to hide out by the two sisters who run the place. Things go smoothly until one of the vets, after smoking the locoweed growing nearby, tries to rape one of the hosts. Being part Native American, her sister decides to get revenge by casting a hex that steadily does in each of the unwelcome guests.]]></overview>
+      <release_date>1973-10-05</release_date>
+      <runtime>92</runtime>
+      <status>Released</status>
+      <tagline><![CDATA[They Came to Wreak Havoc. They Picked the Wrong Town.]]></tagline>
+      <actors>
+         <actor id="30613" name="Keith Carradine" profile_path="/h9lQYuJDOdE8QbCxUAwdYtB5hQf.jpg">
+            <character cast_id="1">Whizzer</character>
+         </actor>
+         <actor id="349" name="Scott Glenn" profile_path="/gjVe5sizXzlw9HfUIY9jB5C8pBB.jpg">
+            <character cast_id="2">Jimbang</character>
+         </actor>
+         <actor id="2048" name="Gary Busey" profile_path="/n66ycv61ZoqusHthcQde1g3JY6T.jpg">
+            <character cast_id="3">Giblets</character>
+         </actor>
+         <actor id="98082" name="Dan Haggerty" profile_path="/cokzc3jfbJcuq5bbRQQi3JFmj2C.jpg">
+            <character cast_id="4">Brother Billy</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="253498">Leo Garen</director>
+      </directors>
+      <original_title>Hex</original_title>
+      <budget>980</budget>
+      <poster_path>/a00FVMYAAUIaS2xSx7JtXF6uc6f.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>176704</_id>
+      <title>Kino-pravda no. 17</title>
+      <overview><![CDATA[A Soviet Union newsreel in the Kino-pravda series by Dziga Vertov.]]></overview>
+      <release_date>1923-03-12</release_date>
+      <status>Released</status>
+      <directors>
+         <director id="95111" profile_path="/rbau6660JLbNQIMXIJEMLxaI9MO.jpg">Dziga Vertov</director>
+      </directors>
+      <original_title>Kino-pravda no. 17</original_title>
+   </movie>
+   <movie>
+      <_id>220024</_id>
+      <title>A Time To Die</title>
+      <overview><![CDATA[A World War II vet sets out in 1948 to avenge the death of his wife at the hands of Nazis. His targets are four Germans, a Sicilian, and a Hungarian who committed the atrocities. He is aided by a CIA operative, who has another agenda. One of the targeted men is being groomed by the US to become the West German chancellor and is to be protected. Along the way, a third person joins the team.]]></overview>
+      <runtime>91</runtime>
+      <status>Released</status>
+      <tagline><![CDATA[Mario (The Godfather) Puzo's Story of Revenge]]></tagline>
+      <original_title>A Time To Die</original_title>
+   </movie>
+   <movie>
+      <_id>238715</_id>
+      <title>Lieben - Nur tot kann er dich lieben</title>
+      <genres>
+         <genre id="18">Drama</genre>
+      </genres>
+      <release_date>2006-10-25</release_date>
+      <spoken_languages>
+         <spoken_language iso="de">Deutsch</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <actors>
+         <actor id="1149219" name="Karsten Dahlem">
+            <character cast_id="1"/>
+         </actor>
+         <actor id="1273397" name="Stefanie Mühle">
+            <character cast_id="2"/>
+         </actor>
+         <actor id="17704" name="Tom Trambow">
+            <character cast_id="3"/>
+         </actor>
+         <actor id="35434" name="Numan Acar" profile_path="/cJ0wLZDcyFKbRslfVNtiyl3XJqC.jpg">
+            <character cast_id="4"/>
+         </actor>
+      </actors>
+      <directors>
+         <director id="1273398">Rouven Blankenfeld</director>
+      </directors>
+      <original_title>Lieben - Nur tot kann er dich lieben</original_title>
+      <production_countries>
+         <production_country iso="DE">Germany</production_country>
+      </production_countries>
+      <poster_path>/vIyq7yWSFGM9nYZ5Hu72kIdUEfB.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>265030</_id>
+      <title>Salome</title>
+      <overview><![CDATA[Richard Strauss's opera, from the Royal Opera House, Covent Garden.]]></overview>
+      <release_date>1997-01-01</release_date>
+      <runtime>109</runtime>
+      <status>Released</status>
+      <actors>
+         <actor id="1310537" name="Catherine Malfitano">
+            <character cast_id="1">Salome</character>
+         </actor>
+         <actor id="1089261" name="Bryn Terfel" profile_path="/zgVNkagg2AC9wLfAJec2Ft8Rr3F.jpg">
+            <character cast_id="2">Jokanaan</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="1310536">Hans Hulscher</director>
+      </directors>
+      <original_title>Salome</original_title>
+      <poster_path>/kX9i2fTANVFh7W6I4YN1eSPUZxu.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>279721</_id>
+      <title>Pancho Barnes</title>
+      <overview><![CDATA[A made for TV movie in which Valerie Bertinelli portrays Florence Pancho Barnes, a bored socialite who decides to learn to fly]]></overview>
+      <release_date>1988-01-01</release_date>
+      <status>Released</status>
+      <original_title>Pancho Barnes</original_title>
+   </movie>
 </movies>

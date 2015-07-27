@@ -17,6 +17,6 @@
 		<mv:prop>runtime</mv:prop>
 	</mv:include>
 	<mv:exclude>
-		<mv:prop>vote_count</mv:prop>
+		<mv:prop>_id</mv:prop>
 	</mv:exclude>-->
 </mv:query>
