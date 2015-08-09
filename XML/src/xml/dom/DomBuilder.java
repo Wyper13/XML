@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ /*
+  * To change this license header, choose License Headers in Project Properties.
+  * To change this template file, choose Tools | Templates
+  * and open the template in the editor.
+  */
 package xml.dom;
 
 import com.mongodb.BasicDBList;
@@ -109,7 +109,7 @@ public class DomBuilder
         if(DBmovie.containsField("genres"))
             genreChild(DBmovie, movie);
         if(DBmovie.containsField("overview"))
-            cdataChild(DBmovie, movie, "overview");
+            textChild(DBmovie, movie, "overview");
         if(DBmovie.containsField("vote_average"))
             numberChild(DBmovie, movie, "vote_average");
         if(DBmovie.containsField("vote_count"))
@@ -123,7 +123,7 @@ public class DomBuilder
         if(DBmovie.containsField("status"))
             textChild(DBmovie, movie, "status");
         if(DBmovie.containsField("tagline"))
-            cdataChild(DBmovie, movie, "tagline");
+            textChild(DBmovie, movie, "tagline");
         if(DBmovie.containsField("actors"))
             actorsChild(DBmovie, movie);
         if(DBmovie.containsField("directors"))
@@ -158,18 +158,18 @@ public class DomBuilder
                 movie.appendChild(elem);
             }
     }
-    
-    private void cdataChild(DBObject DBmovie, Element movie, String field)
-    {
-        if(DBmovie.get(field) != null)
-            if(!DBmovie.get(field).equals(""))
-            {
-                Element elem = doc.createElementNS("http://moviesRT", field);
-                elem.appendChild(doc.createCDATASection(DBmovie.get(field).toString()));
-                movie.appendChild(elem);
-            }
-    }
-    
+    /* http://stackoverflow.com/questions/7528544/error-validating-cdata-elements-with-dtd-xml
+     * private void cdataChild(DBObject DBmovie, Element movie, String field)
+     * {
+     * if(DBmovie.get(field) != null)
+     * if(!DBmovie.get(field).equals(""))
+     * {
+     * Element elem = doc.createElementNS("http://moviesRT", field);
+     * elem.appendChild(doc.createCDATASection(DBmovie.get(field).toString()));
+     * movie.appendChild(elem);
+     * }
+     * }
+     */
     private void numberChild(DBObject DBmovie, Element movie, String field)
     {
         if(DBmovie.get(field) != null)
@@ -346,5 +346,10 @@ public class DomBuilder
             }
             
         }
+    }
+    
+    public Document getDoc()
+    {
+        return doc;
     }
 }

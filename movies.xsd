@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://moviesRT"
+  xmlns="http://moviesRT"
+  elementFormDefault="qualified">
+<!-- max/min Occurs = 1 par défaut
+     use = optional par défaut -->
+
+<!-- ###############################################################
+                                PARTIE 5
+     ############################################################### -->
+
+<xs:complexType name="characterTYPE">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="cast_id" type="xs:nonNegativeInteger" use="required"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<!-- ###############################################################
+                                PARTIE 4
+     ############################################################### -->
+
+<xs:complexType name="genreTYPE">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="languageTYPE">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="iso" type="xs:string" use="required"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="actorTYPE">
+  <xs:sequence>
+    <xs:element name="character" type="characterTYPE" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+  <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+  <xs:attribute name="name" type="xs:string" use="required"/>
+  <xs:attribute name="profile_path" type="pathTYPE"/>
+</xs:complexType>
+
+<xs:complexType name="directorTYPE">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+      <xs:attribute name="profile_path" type="pathTYPE"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="companyTYPE">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="countryTYPE">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="iso" type="xs:string" use="required"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<!-- ###############################################################
+                                PARTIE 3
+     ############################################################### -->
+
+<xs:element name="genres">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="genre" type="genreTYPE" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="voteTYPE">
+  <xs:restriction base="xs:float">
+    <xs:minInclusive value="0"/>
+    <xs:maxInclusive value="10"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="spoken_languages">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="spoken_language" type="languageTYPE" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="statusTYPE">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Canceled"/>
+    <xs:enumeration value="In Production"/>
+    <xs:enumeration value="Planned"/>
+    <xs:enumeration value="Post Production"/>
+    <xs:enumeration value="Released"/>
+    <xs:enumeration value="Rumored"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="actors">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="actor" type="actorTYPE" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="directors">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="director" type="directorTYPE" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="production_companies">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="production_company" type="companyTYPE" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="production_countries">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="production_country" type="countryTYPE" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="pathTYPE">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="(.)+\.jpg"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- ###############################################################
+                                PARTIE 2
+     ############################################################### -->
+
+<xs:element name="movie">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="_id" type="xs:string"/>
+      <xs:element name="title" type="xs:string" minOccurs="0"/>
+      <xs:element ref="genres" minOccurs="0"/>
+      <xs:element name="overview" type="xs:string" minOccurs="0"/>
+      <xs:element name="vote_average" type="voteTYPE" minOccurs="0"/>
+      <xs:element name="vote_count" type="xs:nonNegativeInteger" minOccurs="0"/>
+      <xs:element name="release_date" type="xs:date" minOccurs="0"/>
+      <xs:element name="runtime" type="xs:positiveInteger" minOccurs="0"/>
+      <xs:element ref="spoken_languages" minOccurs="0"/>
+      <xs:element name="status" type="statusTYPE" minOccurs="0"/>
+      <xs:element name="tagline" type="xs:string" minOccurs="0"/>
+      <xs:element ref="actors" minOccurs="0"/>
+      <xs:element ref="directors" minOccurs="0"/>
+      <xs:element ref="production_companies" minOccurs="0"/>
+      <xs:element name="original_title" type="xs:string" minOccurs="0"/>
+      <xs:element name="budget" type="xs:positiveInteger" minOccurs="0"/>
+      <xs:element name="revenue" type="xs:positiveInteger" minOccurs="0"/>
+      <xs:element ref="production_countries" minOccurs="0"/>
+      <xs:element name="homepage" type="xs:anyURI" minOccurs="0"/>
+      <xs:element name="poster_path" type="pathTYPE" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!-- ###############################################################
+                                PARTIE 1
+     ############################################################### -->
+
+<xs:element name="movies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="movie" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>
