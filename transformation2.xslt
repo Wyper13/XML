@@ -1,16 +1,28 @@
-<?xml version="1.0" ?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mv="http://moviesRT">
-	<xsl:output method="xml" version="1.0" indent="yes" omit-xml-declaration="yes"/>
-	<xsl:param name="nActors" select="3"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" 
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mv="http://moviesRT"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xhtml xsl xs mv">
+	
+	<xsl:output method="html"
+        version="1.0"
+        encoding="UTF-8"
+        doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
+        doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+        indent="yes"/>
 
 	<xsl:template match="/">
-		<xsl:processing-instruction name="xml-stylesheet">
-			href="stylesheet.css" type="text/css"
-		</xsl:processing-instruction>
-
-		<table>
-			<caption>Number of movies : <xsl:value-of select="count(//mv:movie)"/></caption>
-			<head>
+	<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+		<caption>Number of movies : <xsl:value-of select="count(//mv:movie)"/></caption>
+	</head>
+	<body>
+		<table>			
+			<header>
 				<cell>N</cell>
         		<cell>Title</cell>
         		<cell>Release Date</cell>
@@ -18,7 +30,7 @@
         		<cell>Actors</cell>
         		<cell>Vote average</cell>
         		<cell>Vote count</cell>
-			</head>
+			</header>
 			<xsl:for-each select="//mv:movie">
 				<xsl:sort select="mv:vote_average" data-type="number" order="descending"/>
 				<xsl:sort select="mv:vote_count" data-type="number" order="descending"/>
@@ -60,5 +72,7 @@
 				</row>
 			</xsl:for-each>
 		</table>
+	</body>
+	</html>
 	</xsl:template>
 </xsl:stylesheet>

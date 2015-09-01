@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
@@ -33,6 +34,7 @@ import net.sourceforge.argparse4j.inf.ArgumentParserException;
 import net.sourceforge.argparse4j.inf.Namespace;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
+import org.xml.sax.helpers.DefaultHandler;
 import xml.dom.DomBuilder;
 import xml.dom.xPath;
 import xml.utils.Mongo;
@@ -54,6 +56,7 @@ public class XML
         AP.addArgument("-o", "--output").setDefault("./movies.xml").help("Output XML file");
         AP.addArgument("-v", "--validation").setDefault("dtd").help("Validation dtd or xsd");
         AP.addArgument("-xs", "--xslt").setDefault("./movies_xslt.xml").help("Output XSLT file");
+        AP.addArgument("-xh", "--xhtml").setDefault("./movies.html").help("Output XHTML file");
         
         Namespace ARGS = null;
         try
@@ -88,17 +91,13 @@ public class XML
 //            System.out.println("nIncl : " + contentH.getIncl().size());
 //            System.out.println("nExcl : " + contentH.getExcl().size());
         }
-        catch (ParserConfigurationException ex)
+        catch (ParserConfigurationException | IOException ex)
         {
             Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
         }
         catch (SAXException ex)
         {
             System.out.println(ex.getMessage());
-        }
-        catch (IOException ex)
-        {
-            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
         }
         // </editor-fold>
         
@@ -171,19 +170,57 @@ public class XML
         // </editor-fold>
         
         // <editor-fold defaultstate="collapsed" desc="8. xslt">
-        String out = ARGS.getString("xslt");
+        String XMLout = ARGS.getString("xslt");
         TransformerFactory tf = TransformerFactory.newInstance();
-        File xslt = new File("./transformation.xslt");
+        File xslt = new File("./transformation1.xslt");
         Transformer transformer = null;
-        File xsltOUT = new File(out);
+        File xsltOUT = new File(XMLout);
         try
         {
             transformer = tf.newTransformer(new StreamSource(xslt));
+            transformer.setOutputProperty(OutputKeys.METHOD, "xml");
+            transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "no");
+            
             transformer.transform(new DOMSource(domBuilder.getDoc()), new StreamResult(xsltOUT));
         }        
         catch (TransformerException ex)
         {
             Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        // </editor-fold>
+        
+        // <editor-fold defaultstate="collapsed" desc="10. xhtml">
+        String XHTMLout = ARGS.getString("xhtml");
+        File xhtml = new File("./transformation2.xslt");
+        transformer = null;
+        File xhtmlOUT = new File(XHTMLout);
+        try
+        {
+            transformer = tf.newTransformer(new StreamSource(xhtml));
+            
+            transformer.transform(new DOMSource(domBuilder.getDoc()), new StreamResult(xhtmlOUT));
+        }        
+        catch (TransformerException ex)
+        {
+            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        // Validation        
+        try
+        {
+            parser = saxPF.newSAXParser().getXMLReader();
+            parser.setContentHandler(new DefaultHandler());
+            parser.setErrorHandler(errorH);
+            parser.parse(XHTMLout);
+            System.out.println("OK");
+        }
+        catch (ParserConfigurationException | IOException ex)
+        {
+            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        catch (SAXException ex)
+        {
+            System.out.println(ex.getMessage());
         }
         // </editor-fold>
     }
