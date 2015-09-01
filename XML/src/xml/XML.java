@@ -28,6 +28,7 @@ import net.sourceforge.argparse4j.inf.Namespace;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import xml.dom.DomBuilder;
+import xml.dom.xPath;
 import xml.utils.Mongo;
 // </editor-fold>
 
@@ -154,6 +155,12 @@ public class XML
                 Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+        // </editor-fold>
+        
+        // <editor-fold defaultstate="collapsed" desc="7. xPath">
+        xPath xPathValid = new xPath(domBuilder.getDoc());
+        xPathValid.validation();
+        
         // </editor-fold>
     }
     
