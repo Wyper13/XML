@@ -1,0 +1,41 @@
+table
+{
+	display:table;	
+	background:#467BA9;
+	margin: 10px 10px 10px 10px;
+	border-color: #000000;
+	border-style: solid;
+	border-spacing: 5px;
+	border-collapse: collapse;
+}
+
+head
+{
+	display: table-header-group;
+	text-align: center;
+}
+
+row
+{
+	display: table-row;
+	line-height: auto;
+	border: groove;
+}
+
+cell
+{
+	display: table-cell;
+	text-align: auto;
+	border: groove;
+	padding: 5px;
+	background-color: #EAF2D3;
+}
+
+caption
+{
+	display:table-caption;
+	caption-side: top;
+	width: auto;
+	text-align: center;
+	font-size: 1.5em;
+}

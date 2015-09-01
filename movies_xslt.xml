@@ -1,139 +1,140 @@
-<table xmlns:mv="http://moviesRT">
-<caption>
-				Number of movies : 0</caption>
+<?xml-stylesheet 
+			href="stylesheet.css" type="text/css"
+		?><table xmlns:mv="http://moviesRT">
+<caption>Number of movies : 14</caption>
 <head>
-<c>N</c>
-<c>Title</c>
-<c>Release Date</c>
-<c>Directors</c>
-<c>Actors</c>
-<c>Vote average</c>
-<c>Vote count</c>
+<cell>N</cell>
+<cell>Title</cell>
+<cell>Release Date</cell>
+<cell>Directors</cell>
+<cell>Actors</cell>
+<cell>Vote average</cell>
+<cell>Vote count</cell>
 </head>
 <row>
-<c>1</c>
-<c>The Lord of the Rings: The Return of the King</c>
-<c>2003-12-17</c>
-<c>Peter Jackson</c>
-<c>Elijah Wood, Ian McKellen, Viggo Mortensen</c>
-<c>7.5</c>
-<c>3215</c>
+<cell>1</cell>
+<cell>The Lord of the Rings: The Return of the King</cell>
+<cell>2003-12-17</cell>
+<cell>Peter Jackson</cell>
+<cell>Elijah Wood, Ian McKellen, Viggo Mortensen</cell>
+<cell>7.5</cell>
+<cell>3215</cell>
 </row>
 <row>
-<c>2</c>
-<c>The Lord of the Rings: The Fellowship of the Ring</c>
-<c>2001-12-19</c>
-<c>Peter Jackson</c>
-<c>Elijah Wood, Ian McKellen, Viggo Mortensen</c>
-<c>7.4</c>
-<c>3417</c>
+<cell>2</cell>
+<cell>The Lord of the Rings: The Fellowship of the Ring</cell>
+<cell>2001-12-19</cell>
+<cell>Peter Jackson</cell>
+<cell>Elijah Wood, Ian McKellen, Viggo Mortensen</cell>
+<cell>7.4</cell>
+<cell>3417</cell>
 </row>
 <row>
-<c>3</c>
-<c>The Lord of the Rings: The Two Towers</c>
-<c>2002-12-18</c>
-<c>Peter Jackson</c>
-<c>Elijah Wood, Ian McKellen, Viggo Mortensen</c>
-<c>7.4</c>
-<c>2786</c>
+<cell>3</cell>
+<cell>The Lord of the Rings: The Two Towers</cell>
+<cell>2002-12-18</cell>
+<cell>Peter Jackson</cell>
+<cell>Elijah Wood, Ian McKellen, Viggo Mortensen</cell>
+<cell>7.4</cell>
+<cell>2786</cell>
 </row>
 <row>
-<c>4</c>
-<c>Batman &amp; Mr. Freeze: SubZero</c>
-<c>1998-03-17</c>
-<c>Boyd Kirkland</c>
-<c>Kevin Conroy, Michael Ansara, Loren Lester</c>
-<c>6.9</c>
-<c>13</c>
+<cell>4</cell>
+<cell>Breaking Out</cell>
+<cell>1999-02-19</cell>
+<cell>Daniel Lind Lagerlöf</cell>
+<cell>Björn Kjellman, Peter Haber, Viveka Seldahl</cell>
+<cell>6.8</cell>
+<cell>2</cell>
 </row>
 <row>
-<c>5</c>
-<c>Sagar Alias Jacky Reloaded</c>
-<c>2009-03-26</c>
-<c>Amal Neerad</c>
-<c>Mohanlal, Bhavana, Manoj K.  Jayan</c>
-<c>6.3</c>
-<c>2</c>
+<cell>5</cell>
+<cell>The Lord of the Rings</cell>
+<cell>1978-11-15</cell>
+<cell>Ralph Bakshi</cell>
+<cell>Christopher Guard, William Squire, Michael Scholes</cell>
+<cell>6.1</cell>
+<cell>27</cell>
 </row>
 <row>
-<c>6</c>
-<c>The Lord of the Rings</c>
-<c>1978-11-15</c>
-<c>Ralph Bakshi</c>
-<c>Christopher Guard, William Squire, Michael Scholes</c>
-<c>6.1</c>
-<c>27</c>
+<cell>6</cell>
+<cell>Bez Muzhchin</cell>
+<cell>2011-11-11</cell>
+<cell>Rezo Gigineishvili</cell>
+<cell>Nadezhda Mikhalkova, Vera Voronkova, Mikhail Porechenkov</cell>
+<cell>5.0</cell>
+<cell>1</cell>
 </row>
 <row>
-<c>7</c>
-<c>Bez Muzhchin</c>
-<c>2011-11-11</c>
-<c>Rezo Gigineishvili</c>
-<c>Nadezhda Mikhalkova, Vera Voronkova, Mikhail Porechenkov</c>
-<c>5.0</c>
-<c>1</c>
+<cell>7</cell>
+<cell>Chicks</cell>
+<cell>2010-10-13</cell>
+<cell>Sophie Letourneur</cell>
+<cell>Sarah-Jane Sauvegrain, Eulalie Juster, Mahault Mollaret</cell>
+<cell/>
+<cell/>
 </row>
 <row>
-<c>8</c>
-<c>Let's Go Native</c>
-<c>1964-02-10</c>
-<c>Alexander Swiagenin</c>
-<c/>
-<c/>
-<c/>
+<cell>8</cell>
+<cell>The World of Geisha</cell>
+<cell>1973-11-03</cell>
+<cell>Tatsumi Kumashiro</cell>
+<cell>Junko Miyashita, Eimei Esumi, Gô Awazu</cell>
+<cell/>
+<cell/>
 </row>
 <row>
-<c>9</c>
-<c>Zemlja kosarke</c>
-<c>2008-11-02</c>
-<c/>
-<c/>
-<c/>
-<c/>
+<cell>9</cell>
+<cell>Burnley v Manchester United</cell>
+<cell>1902-11-20</cell>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
 </row>
 <row>
-<c>10</c>
-<c>Blink 182 - Big Day Out 2000 Melbourne, Australia</c>
-<c>2000-01-30</c>
-<c/>
-<c/>
-<c/>
-<c/>
+<cell>10</cell>
+<cell>H.O.T. Human Organ Traffic</cell>
+<cell>2009-10-18</cell>
+<cell>Roberto Orazi</cell>
+<cell/>
+<cell/>
+<cell/>
 </row>
 <row>
-<c>11</c>
-<c>Father-in-Law With a Heart of Gold</c>
-<c>1959-01-01</c>
-<c>Marios Nousias</c>
-<c>Dinos Iliopoulos, Vasilis Diamantopoulos, Anna Kyriakou</c>
-<c/>
-<c/>
+<cell>11</cell>
+<cell>Funny Castle</cell>
+<cell>2004-07-08</cell>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
 </row>
 <row>
-<c>12</c>
-<c>Allah Meharban To Gadha Pehalwan</c>
-<c/>
-<c/>
-<c/>
-<c/>
-<c/>
+<cell>12</cell>
+<cell>The Death of an Insect</cell>
+<cell>2010-05-31</cell>
+<cell>Pekka Veikkolainen, Hannes Vartiainen</cell>
+<cell/>
+<cell/>
+<cell/>
 </row>
 <row>
-<c>13</c>
-<c>Lightning Carson Rides Again</c>
-<c>1938-10-09</c>
-<c>Sam Newfield</c>
-<c>Tim McCoy, Joan Barclay, Ted Adams</c>
-<c/>
-<c/>
+<cell>13</cell>
+<cell>The Spaceship of Aliens</cell>
+<cell>1985-06-06</cell>
+<cell>Sergey Nikonenko</cell>
+<cell>Sergey Nikonenko, Oleg Tabakov, Vladimir Steklov</cell>
+<cell/>
+<cell/>
 </row>
 <row>
-<c>14</c>
-<c>Pancho Barnes</c>
-<c>1988-01-01</c>
-<c/>
-<c/>
-<c/>
-<c/>
+<cell>14</cell>
+<cell>Pancho Barnes</cell>
+<cell>1988-01-01</cell>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
 </row>
 </table>

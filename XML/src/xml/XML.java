@@ -185,8 +185,6 @@ public class XML
         {
             Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
         // </editor-fold>
     }
     

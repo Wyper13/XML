@@ -4,40 +4,42 @@
 	<xsl:param name="nActors" select="3"/>
 
 	<xsl:template match="/">
+		<xsl:processing-instruction name="xml-stylesheet">
+			href="stylesheet.css" type="text/css"
+		</xsl:processing-instruction>
+
 		<table>
-			<caption>
-				Number of movies : <xsl:value-of select="count(//movie)"/>
-			</caption>
+			<caption>Number of movies : <xsl:value-of select="count(//mv:movie)"/></caption>
 			<head>
-				<c>N</c>
-        		<c>Title</c>
-        		<c>Release Date</c>
-        		<c>Directors</c>
-        		<c>Actors</c>
-        		<c>Vote average</c>
-        		<c>Vote count</c>
+				<cell>N</cell>
+        		<cell>Title</cell>
+        		<cell>Release Date</cell>
+        		<cell>Directors</cell>
+        		<cell>Actors</cell>
+        		<cell>Vote average</cell>
+        		<cell>Vote count</cell>
 			</head>
 			<xsl:for-each select="//mv:movie">
 				<xsl:sort select="mv:vote_average" data-type="number" order="descending"/>
 				<xsl:sort select="mv:vote_count" data-type="number" order="descending"/>
 
 				<row>
-					<c><xsl:value-of select="position()"/></c>
-					<c><xsl:value-of select="mv:title"/></c>
-					<c><xsl:value-of select="mv:release_date"/></c>
-					<c>
+					<cell><xsl:value-of select="position()"/></cell>
+					<cell><xsl:value-of select="mv:title"/></cell>
+					<cell><xsl:value-of select="mv:release_date"/></cell>
+					<cell>
 						<xsl:for-each select="mv:directors/mv:director">
 							<xsl:choose>
 								<xsl:when test="position() = 1">
 									<xsl:value-of select="text()"/>
 								</xsl:when>
 								<xsl:otherwise>
-									<xsl:value-of select="concat(' ,', text())"/>
+									<xsl:value-of select="concat(', ', text())"/>
 								</xsl:otherwise>
 							</xsl:choose>
 						</xsl:for-each>
-					</c>
-					<c>
+					</cell>
+					<cell>
 						<xsl:for-each select="mv:actors/mv:actor">
 							<xsl:sort select="@cast_id" data-type="number" order="ascending"/>
 							<xsl:choose>
@@ -52,9 +54,9 @@
 								</xsl:when>
 							</xsl:choose>
 						</xsl:for-each>
-					</c>
-					<c><xsl:value-of select="mv:vote_average"/></c>
-					<c><xsl:value-of select="mv:vote_count"/></c>
+					</cell>
+					<cell><xsl:value-of select="mv:vote_average"/></cell>
+					<cell><xsl:value-of select="mv:vote_count"/></cell>
 				</row>
 			</xsl:for-each>
 		</table>
