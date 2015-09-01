@@ -17,7 +17,13 @@ import java.util.logging.Logger;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
@@ -43,10 +49,11 @@ public class XML
     {
         // <editor-fold defaultstate="collapsed" desc="args">
         ArgumentParser AP = ArgumentParsers.newArgumentParser("moviesRT");
-        AP.addArgument("-c", "--config").setDefault("./config.xml").help("XML");
+        AP.addArgument("-c", "--config").setDefault("./config.xml").help("Config XML");
         AP.addArgument("-d", "--dom").setDefault("2").help("DOM lvl");
         AP.addArgument("-o", "--output").setDefault("./movies.xml").help("Output XML file");
-        AP.addArgument("-v", "--validation").setConst("dtd").help("Validation dtd or xsd");
+        AP.addArgument("-v", "--validation").setDefault("dtd").help("Validation dtd or xsd");
+        AP.addArgument("-xs", "--xslt").setDefault("./movies_xslt.xml").help("Output XSLT file");
         
         Namespace ARGS = null;
         try
@@ -160,6 +167,25 @@ public class XML
         // <editor-fold defaultstate="collapsed" desc="7. xPath">
         xPath xPathValid = new xPath(domBuilder.getDoc());
         xPathValid.validation();
+        
+        // </editor-fold>
+        
+        // <editor-fold defaultstate="collapsed" desc="8. xslt">
+        String out = ARGS.getString("xslt");
+        TransformerFactory tf = TransformerFactory.newInstance();
+        File xslt = new File("./transformation.xslt");
+        Transformer transformer = null;
+        File xsltOUT = new File(out);
+        try
+        {
+            transformer = tf.newTransformer(new StreamSource(xslt));
+            transformer.transform(new DOMSource(domBuilder.getDoc()), new StreamResult(xsltOUT));
+        }        
+        catch (TransformerException ex)
+        {
+            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         
         // </editor-fold>
     }

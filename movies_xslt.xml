@@ -1,0 +1,139 @@
+<table xmlns:mv="http://moviesRT">
+<caption>
+				Number of movies : 0</caption>
+<head>
+<c>N</c>
+<c>Title</c>
+<c>Release Date</c>
+<c>Directors</c>
+<c>Actors</c>
+<c>Vote average</c>
+<c>Vote count</c>
+</head>
+<row>
+<c>1</c>
+<c>The Lord of the Rings: The Return of the King</c>
+<c>2003-12-17</c>
+<c>Peter Jackson</c>
+<c>Elijah Wood, Ian McKellen, Viggo Mortensen</c>
+<c>7.5</c>
+<c>3215</c>
+</row>
+<row>
+<c>2</c>
+<c>The Lord of the Rings: The Fellowship of the Ring</c>
+<c>2001-12-19</c>
+<c>Peter Jackson</c>
+<c>Elijah Wood, Ian McKellen, Viggo Mortensen</c>
+<c>7.4</c>
+<c>3417</c>
+</row>
+<row>
+<c>3</c>
+<c>The Lord of the Rings: The Two Towers</c>
+<c>2002-12-18</c>
+<c>Peter Jackson</c>
+<c>Elijah Wood, Ian McKellen, Viggo Mortensen</c>
+<c>7.4</c>
+<c>2786</c>
+</row>
+<row>
+<c>4</c>
+<c>Batman &amp; Mr. Freeze: SubZero</c>
+<c>1998-03-17</c>
+<c>Boyd Kirkland</c>
+<c>Kevin Conroy, Michael Ansara, Loren Lester</c>
+<c>6.9</c>
+<c>13</c>
+</row>
+<row>
+<c>5</c>
+<c>Sagar Alias Jacky Reloaded</c>
+<c>2009-03-26</c>
+<c>Amal Neerad</c>
+<c>Mohanlal, Bhavana, Manoj K.  Jayan</c>
+<c>6.3</c>
+<c>2</c>
+</row>
+<row>
+<c>6</c>
+<c>The Lord of the Rings</c>
+<c>1978-11-15</c>
+<c>Ralph Bakshi</c>
+<c>Christopher Guard, William Squire, Michael Scholes</c>
+<c>6.1</c>
+<c>27</c>
+</row>
+<row>
+<c>7</c>
+<c>Bez Muzhchin</c>
+<c>2011-11-11</c>
+<c>Rezo Gigineishvili</c>
+<c>Nadezhda Mikhalkova, Vera Voronkova, Mikhail Porechenkov</c>
+<c>5.0</c>
+<c>1</c>
+</row>
+<row>
+<c>8</c>
+<c>Let's Go Native</c>
+<c>1964-02-10</c>
+<c>Alexander Swiagenin</c>
+<c/>
+<c/>
+<c/>
+</row>
+<row>
+<c>9</c>
+<c>Zemlja kosarke</c>
+<c>2008-11-02</c>
+<c/>
+<c/>
+<c/>
+<c/>
+</row>
+<row>
+<c>10</c>
+<c>Blink 182 - Big Day Out 2000 Melbourne, Australia</c>
+<c>2000-01-30</c>
+<c/>
+<c/>
+<c/>
+<c/>
+</row>
+<row>
+<c>11</c>
+<c>Father-in-Law With a Heart of Gold</c>
+<c>1959-01-01</c>
+<c>Marios Nousias</c>
+<c>Dinos Iliopoulos, Vasilis Diamantopoulos, Anna Kyriakou</c>
+<c/>
+<c/>
+</row>
+<row>
+<c>12</c>
+<c>Allah Meharban To Gadha Pehalwan</c>
+<c/>
+<c/>
+<c/>
+<c/>
+<c/>
+</row>
+<row>
+<c>13</c>
+<c>Lightning Carson Rides Again</c>
+<c>1938-10-09</c>
+<c>Sam Newfield</c>
+<c>Tim McCoy, Joan Barclay, Ted Adams</c>
+<c/>
+<c/>
+</row>
+<row>
+<c>14</c>
+<c>Pancho Barnes</c>
+<c>1988-01-01</c>
+<c/>
+<c/>
+<c/>
+<c/>
+</row>
+</table>
