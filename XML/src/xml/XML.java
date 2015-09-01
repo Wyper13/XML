@@ -1,8 +1,8 @@
- /*
-  * To change this license header, choose License Headers in Project Properties.
-  * To change this template file, choose Tools | Templates
-  * and open the template in the editor.
-  */
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package xml;
 
 // <editor-fold defaultstate="collapsed" desc="imports">
@@ -12,6 +12,7 @@ import xml.sax.ErrorHdl;
 import xml.sax.ContentHdl;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.XMLConstants;
@@ -49,6 +50,8 @@ public class XML
     
     public static void main(String[] args) throws UnsupportedEncodingException
     {
+        long begin, end;
+        
         // <editor-fold defaultstate="collapsed" desc="args">
         ArgumentParser AP = ArgumentParsers.newArgumentParser("moviesRT");
         AP.addArgument("-c", "--config").setDefault("./config.xml").help("Config XML");
@@ -84,8 +87,12 @@ public class XML
             parser = saxPF.newSAXParser().getXMLReader();
             parser.setContentHandler(contentH);
             parser.setErrorHandler(errorH);
+            
+            System.out.printf("SAX Parsing config : ");
+            begin = System.nanoTime();
             parser.parse(xml);
-            System.out.println("OK");
+            end = System.nanoTime() - begin;
+            System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
 //            System.out.println("Random : " + contentH.getRandom());
 //            System.out.println("nIds : " + contentH.getIds().size());
 //            System.out.println("nIncl : " + contentH.getIncl().size());
@@ -107,11 +114,20 @@ public class XML
         DBCursor cursor =  mongo.getMovies(contentH);
         
         DomBuilder domBuilder = new DomBuilder(domlvl);
+        
+        System.out.printf("DOM build document : ");
+        begin = System.nanoTime();
         domBuilder.generateDoc(cursor);
+        end = System.nanoTime() - begin;
+        System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
         
         String outFile = ARGS.getString("output");
         
+        System.out.printf("DOM serialisation : ");
+        begin = System.nanoTime();
         domBuilder.domSerialize(outFile);
+        end = System.nanoTime() - begin;
+        System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
         // </editor-fold>
         
         // <editor-fold defaultstate="collapsed" desc="6. validation">
@@ -123,8 +139,12 @@ public class XML
                 parser = saxPF.newSAXParser().getXMLReader();
                 parser.setContentHandler(contentH);
                 parser.setErrorHandler(errorH);
+                
+                System.out.printf("DTD validation : ");
+                begin = System.nanoTime();
                 parser.parse(outFile);
-                System.out.println("DTD OK");
+                end = System.nanoTime() - begin;
+                System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
             }
             catch (ParserConfigurationException ex)
             {
@@ -148,9 +168,11 @@ public class XML
                 Validator v = shema.newValidator();
                 v.setErrorHandler(errorH);
                 
+                System.out.printf("XSD validation : ");
+                begin = System.nanoTime();
                 v.validate(new DOMSource(domBuilder.getDoc()));
-                
-                System.out.println("XSD OK");
+                end = System.nanoTime() - begin;
+                System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
             }
             catch (SAXException ex)
             {
@@ -165,7 +187,12 @@ public class XML
         
         // <editor-fold defaultstate="collapsed" desc="7. xPath">
         xPath xPathValid = new xPath(domBuilder.getDoc());
+        
+        System.out.printf("XPATH validation : ");
+        begin = System.nanoTime();
         xPathValid.validation();
+        end = System.nanoTime() - begin;
+        System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
         
         // </editor-fold>
         
@@ -181,8 +208,12 @@ public class XML
             transformer.setOutputProperty(OutputKeys.METHOD, "xml");
             transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "no");
             
+            System.out.printf("XSLT : ");
+            begin = System.nanoTime();
             transformer.transform(new DOMSource(domBuilder.getDoc()), new StreamResult(xsltOUT));
-        }        
+            end = System.nanoTime() - begin;
+            System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
+        }
         catch (TransformerException ex)
         {
             Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
@@ -198,21 +229,29 @@ public class XML
         {
             transformer = tf.newTransformer(new StreamSource(xhtml));
             
+            System.out.printf("XHTML generation : ");
+            begin = System.nanoTime();
             transformer.transform(new DOMSource(domBuilder.getDoc()), new StreamResult(xhtmlOUT));
-        }        
+            end = System.nanoTime() - begin;
+            System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
+        }
         catch (TransformerException ex)
         {
             Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        // Validation        
+        // Validation
         try
         {
             parser = saxPF.newSAXParser().getXMLReader();
             parser.setContentHandler(new DefaultHandler());
             parser.setErrorHandler(errorH);
+            
+            System.out.printf("XHTML validation : ");
+            begin = System.nanoTime();
             parser.parse(XHTMLout);
-            System.out.println("OK");
+            end = System.nanoTime() - begin;
+            System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
         }
         catch (ParserConfigurationException | IOException ex)
         {
@@ -221,6 +260,8 @@ public class XML
         catch (SAXException ex)
         {
             System.out.println(ex.getMessage());
+            end = System.nanoTime() - begin;
+            System.out.println("XHTML validation : " + TimeUnit.NANOSECONDS.toMillis(end) + "ms");
         }
         // </editor-fold>
     }

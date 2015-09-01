@@ -383,43 +383,121 @@
       <poster_path>/1l3WpoF7TX9pOprX4XepCXjQXUV.jpg</poster_path>
    </movie>
    <movie>
-      <_id>57592</_id>
-      <title>LeapFrog: The Amazing Alphabet Amusement Park</title>
-      <overview>When their firefly friend, Edison, takes Tad, Lily and Scout to the place of his childhood dreams, teh gang is shocked to dicover that Alistair Alphabelly's Amazing Amusement Park is...closed! To make matters worse, Edison has gotten himself stuck atop the Amazing Alphabet Ferris Wheel. The only way to save him is to turn on the rides in the park with the magic of the alphabet. Now Tad and Lily must learn all of the letters, big and small, to save their friend, save the day, and perhaps even meet the rhyme master himself, Alistair Alphabelly!</overview>
-      <release_date>2011-01-18</release_date>
-      <runtime>39</runtime>
-      <status>Released</status>
-      <tagline>Get ready for a fun letter ride!</tagline>
-      <original_title>LeapFrog: The Amazing Alphabet Amusement Park</original_title>
-      <homepage>http://shop.leapfrog.com/leapfrog/jump/The-Amazing-Alphabet-Amusement-Park-DVD/productDetail/Learning-DVDs/VIDEO21232/cat80050?navAction=jump&amp;navCount=0&amp;categoryNav=false</homepage>
-      <poster_path>/9nFWM16czmyNBaMyic5EzWxvNcN.jpg</poster_path>
-   </movie>
-   <movie>
-      <_id>59129</_id>
-      <title>Derek and Clive Get the Horn</title>
+      <_id>15605</_id>
+      <title>Undercover</title>
       <genres>
          <genre id="35">Comedy</genre>
+         <genre id="80">Crime</genre>
       </genres>
-      <overview>A documentary recording the making of Peter Cook and Dudley Moore's comedy album Derek and Clive Ad Nauseam.</overview>
-      <release_date>1979-10-01</release_date>
-      <runtime>89</runtime>
+      <overview>No overview found.</overview>
+      <release_date>2005-01-01</release_date>
+      <runtime>85</runtime>
+      <spoken_languages>
+         <spoken_language iso="de">Deutsch</spoken_language>
+      </spoken_languages>
       <status>Released</status>
       <actors>
-         <actor id="56819" name="Dudley Moore" profile_path="/8qmCTzg0wI4iOI7q4YuYzRXQLD5.jpg">
-            <character cast_id="4">Derek</character>
+         <actor id="52383" name="Viktor Giacobbo">
+            <character cast_id="1">Boris Ruf</character>
          </actor>
-         <actor id="18266" name="Peter Cook" profile_path="/5l1lXeD3cCKQ58AXt5p040LNzpQ.jpg">
-            <character cast_id="5">Clive</character>
+         <actor id="78444" name="Anna Schinz">
+            <character cast_id="2">Anna Ruf</character>
          </actor>
-         <actor id="158079" name="Richard Branson" profile_path="/7RF4iztNoZebQWp0uKvEXs0mvLa.jpg">
-            <character cast_id="6">Man with a Beard</character>
+         <actor id="78445" name="Nana Krüger">
+            <character cast_id="3">Christa Oberholzer</character>
+         </actor>
+         <actor id="169" name="Hanns Zischler" profile_path="/kcWgn5jTuI3BPVQlqRMGQ27N4yU.jpg">
+            <character cast_id="4">Landsbichler</character>
+         </actor>
+         <actor id="54558" name="Sylvia Rohrer">
+            <character cast_id="5">Sibylle Ruf</character>
+         </actor>
+         <actor id="78446" name="Roland Koch">
+            <character cast_id="6">Nick Hürzler</character>
+         </actor>
+         <actor id="64023" name="Mike Müller" profile_path="/687TIHgCUjJTyxRUXybMcJqeWI3.jpg">
+            <character cast_id="7">Raoul Furrer</character>
+         </actor>
+         <actor id="78447" name="Stefano Viali">
+            <character cast_id="8">Lappola</character>
+         </actor>
+         <actor id="78448" name="David Pietroni">
+            <character cast_id="9">Pippo</character>
+         </actor>
+      </actors>
+      <original_title>Undercover</original_title>
+      <production_countries>
+         <production_country iso="CH">Switzerland</production_country>
+      </production_countries>
+      <poster_path>/1jlNDkD24qsR3psTzSrDAgIYZJR.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>61709</_id>
+      <title>Serial Killers: Profiling the Criminal Mind</title>
+      <overview>Former FBI agent John Douglas, the inventor of criminal profiling, leads a journey into the minds of the 20th Century's most notorious killers, including Charles Manson, John Wayne Gacy, and Jeffrey Dahmer.</overview>
+      <vote_average>8.0</vote_average>
+      <vote_count>1</vote_count>
+      <release_date>1999-01-01</release_date>
+      <runtime>86</runtime>
+      <actors>
+         <actor id="725" name="Jerry Orbach" profile_path="/AoCJabC7OoiZCLbopAk54fF05B6.jpg">
+            <character cast_id="1">Narrator</character>
+         </actor>
+      </actors>
+      <original_title>Serial Killers: Profiling the Criminal Mind</original_title>
+      <poster_path>/eO8ctMW36wlbUfubLv5x6Gho2xz.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>65158</_id>
+      <title>Squanto - A Warrior's Tale</title>
+      <genres>
+         <genre id="18">Drama</genre>
+         <genre id="10751">Family</genre>
+      </genres>
+      <overview>Squanto is a high-born Indian warrior from a tribe on the Atlantic coast of North America which devotes its life to hunting and rivalry with a neighboring tribe. Everything changes forever after a ship arrives from England, prospecting the region's commercial potential for the rich Sir George, who uses all his wealth and influence only for ever greater profit. When it returns, several Indians find themselves captives on board, including Squanto. The arrogant Christians consider themselves utterly superior to the 'heathen savages' and treat them as brutally as they do beasts. Squanto fights a bear in a circus, not understanding how men can be so cruel to that creature either, and manages a spectacular escape, but where must he go? He finds shelter and help in a rural monastery, where it takes his protector some effort to prevent the others considering the unknown as diabolical. In time sir George's men come looking for him most brutally...</overview>
+      <vote_average>7.5</vote_average>
+      <vote_count>1</vote_count>
+      <release_date>1994-10-28</release_date>
+      <runtime>102</runtime>
+      <spoken_languages>
+         <spoken_language iso="en">English</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <actors>
+         <actor id="33527" name="Adam Beach" profile_path="/4jtkYyuYBY4bIwZbjKedl6wfJG.jpg">
+            <character cast_id="3">Squanto</character>
+         </actor>
+         <actor id="240609" name="Sheldon Peters Wolfchild">
+            <character cast_id="4">Mooshawset</character>
+         </actor>
+         <actor id="65529" name="Irene Bedard" profile_path="/eUX06X7ZpioIO7rHRsaAyNzL646.jpg">
+            <character cast_id="5">Nakooma</character>
+         </actor>
+         <actor id="57448" name="Eric Schweig" profile_path="/zz4n9Bz32wAEwkO2KmBG3tDClo.jpg">
+            <character cast_id="6">Epenow</character>
+         </actor>
+         <actor id="240610" name="Leroy Peltier">
+            <character cast_id="7">Pequod</character>
+         </actor>
+         <actor id="5658" name="Michael Gambon" profile_path="/k6VxRs7xcG6DLEVM1izjb3UWSyC.jpg">
+            <character cast_id="8">Sir George</character>
+         </actor>
+         <actor id="27631" name="Nathaniel Parker" profile_path="/w5SnRNxxY00lIDPB1SUh47nx46n.jpg">
+            <character cast_id="9">Thomas Dermer</character>
+         </actor>
+         <actor id="2451" name="Alex Norton" profile_path="/yqmwlDs8CDxCJNa72lNxNwRKoSa.jpg">
+            <character cast_id="10">Harding</character>
          </actor>
       </actors>
       <directors>
-         <director id="52968" profile_path="/jScppFv3bbozdAdIPUQ8vp4GbnG.jpg">Russell Mulcahy</director>
+         <director id="65874" profile_path="/7FP0sMsozn6dKLzejTf3JVoCokd.jpg">Xavier Koller</director>
       </directors>
-      <original_title>Derek and Clive Get the Horn</original_title>
-      <poster_path>/vptxHiIawiDFMHuRHDfhceVaVW6.jpg</poster_path>
+      <original_title>Squanto - A Warrior's Tale</original_title>
+      <revenue>3337685</revenue>
+      <production_countries>
+         <production_country iso="US">United States of America</production_country>
+      </production_countries>
+      <poster_path>/iJZcrFnp3QVlLefWJ2FY9R6lZtU.jpg</poster_path>
    </movie>
    <movie>
       <_id>76518</_id>
@@ -469,94 +547,210 @@
       <poster_path>/mrOwDjmisUBa2rQV2zyVgatUpN4.jpg</poster_path>
    </movie>
    <movie>
-      <_id>156312</_id>
-      <title>Spaceman</title>
-      <overview>A 4-year-old boy is abducted by aliens and raised on a distant planet to be an unstoppable killing machine only to crash land on Earth.</overview>
-      <runtime>88</runtime>
-      <status>Released</status>
-      <tagline>Abducted by aliens as a child... he returns to Earth as an outer-space killing machine!</tagline>
-      <original_title>Spaceman</original_title>
-      <budget>50</budget>
-      <poster_path>/xuNnmIJu3vZlksZLMt5ihH9WQiu.jpg</poster_path>
-   </movie>
-   <movie>
-      <_id>171134</_id>
-      <title>Brian Wilson Presents: Pet Sounds Live in London</title>
-      <overview>This DVD captures Brian Wilson and his ten-piece rock &amp; roll orchestra at Royal Festival Hall in London during their 2002 tour.</overview>
-      <release_date>2005-07-10</release_date>
-      <status>Released</status>
-      <original_title>Brian Wilson Presents: Pet Sounds Live in London</original_title>
-      <poster_path>/ntMBmzYkczq6XZSYZn6biMdaYDC.jpg</poster_path>
-   </movie>
-   <movie>
-      <_id>185919</_id>
-      <title>Un'insolita vendemmia</title>
+      <_id>81912</_id>
+      <title>Belle</title>
       <genres>
-         <genre id="35">Comedy</genre>
+         <genre id="18">Drama</genre>
       </genres>
-      <release_date>2013-04-14</release_date>
+      <overview>After delivering a lecture at a poetry society meeting in backwoods Belgium, Mathieu Gregoire, a happily married archivist, takes the scenic route home one impenetrable night through the primeval Walloon Fagnard forest. In the darkest, deepest part of the forest he hits a large dog with his Volvo, but discovers he hasn’t killed it. He returns the next day with a shotgun but cannot find the animal. He hears a whine from the nearby woods and discovers that the dog is alive, but mortally wounded. Following at a safe distance, he tracks the poor dog to a ruined farmhouse. There he encounters a beautiful but strangely mute young woman who is presumably the dog’s owner...</overview>
+      <vote_average>2.5</vote_average>
+      <vote_count>1</vote_count>
+      <release_date>1973-01-01</release_date>
+      <runtime>96</runtime>
+      <spoken_languages>
+         <spoken_language iso="fr">Français</spoken_language>
+      </spoken_languages>
       <status>Released</status>
       <actors>
-         <actor id="240102" name="Roberto Alpi">
-            <character cast_id="2"/>
+         <actor id="38898" name="Jean-Luc Bideau" profile_path="/rlTVEj6IbATndejrVWMzG4ADgeT.jpg">
+            <character cast_id="4">Mathieu Grégoire</character>
          </actor>
-         <actor id="101131" name="Pietro Genuardi">
+         <actor id="25178" name="Danièle Delorme" profile_path="/Ej2WscpjMSGzhzjthzUMen1XSc.jpg">
+            <character cast_id="5">Jeanne</character>
+         </actor>
+         <actor id="543511" name="Adriana Bogdan">
+            <character cast_id="6">Belle</character>
+         </actor>
+         <actor id="592634" name="Roger Coggio">
+            <character cast_id="7">Victor</character>
+         </actor>
+         <actor id="592635" name="René Hainaux">
+            <character cast_id="8">Deputy</character>
+         </actor>
+         <actor id="73728" name="Stéphane Excoffier">
+            <character cast_id="9">Marie</character>
+         </actor>
+         <actor id="592636" name="John Dobrynine">
+            <character cast_id="10">John</character>
+         </actor>
+         <actor id="70498" name="Valerio Popesco">
+            <character cast_id="11">Stranger</character>
+         </actor>
+         <actor id="76286" name="François Beukelaers">
+            <character cast_id="12">False Stranger</character>
+         </actor>
+         <actor id="592637" name="André Blavier">
+            <character cast_id="13">Vincent</character>
+         </actor>
+         <actor id="592638" name="Marc Audier">
+            <character cast_id="14">Man at café</character>
+         </actor>
+         <actor id="133754" name="Arlette Emmery">
+            <character cast_id="15">Narrator</character>
+         </actor>
+         <actor id="592639" name="Suzanne Gohy">
+            <character cast_id="16">Mother</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="39271">André Delvaux</director>
+      </directors>
+      <production_companies>
+         <production_company id="1416">Albina Productions S.a.r.l.</production_company>
+      </production_companies>
+      <original_title>Belle</original_title>
+      <production_countries>
+         <production_country iso="BE">Belgium</production_country>
+         <production_country iso="FR">France</production_country>
+      </production_countries>
+      <poster_path>/hWW5DO4l8O0rTJYMRpJ3Skls1UU.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>90926</_id>
+      <title>Ghost Town</title>
+      <genres>
+         <genre id="27">Horror</genre>
+         <genre id="37">Western</genre>
+      </genres>
+      <overview>Deputy Langley tracks a kidnapped girl to an abandoned ghost town. However, the town is not abandoned, but haunted by the spirits of an outlaw, Devlin, and his gang, who hold the equally deceased townspeople hostage until the outlaws can be killed by a lawman.</overview>
+      <vote_average>5.8</vote_average>
+      <vote_count>2</vote_count>
+      <release_date>1988-05-26</release_date>
+      <runtime>85</runtime>
+      <spoken_languages>
+         <spoken_language iso="en">English</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <tagline>The good. The bad. The Satanic.</tagline>
+      <actors>
+         <actor id="158205" name="Franc Luz">
+            <character cast_id="1001">Langley</character>
+         </actor>
+         <actor id="37367" name="Catherine Hickland" profile_path="/uUxZqo2D5NOqwLPf2BYMG7N9aky.jpg">
+            <character cast_id="1002">Kate</character>
+         </actor>
+         <actor id="133771" name="Jimmie F. Skaggs">
+            <character cast_id="1003">Devlin</character>
+         </actor>
+         <actor id="156651" name="Penelope Windust">
+            <character cast_id="1006">Grace</character>
+         </actor>
+         <actor id="10194" name="Bruce Glover" profile_path="/xVS6edZlUempGkjWqSnPnkGcRTw.jpg">
+            <character cast_id="1007">Dealer</character>
+         </actor>
+         <actor id="59352" name="Zitto Kazann">
+            <character cast_id="1008">Blacksmith</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="938893">Richard Governor</director>
+      </directors>
+      <production_companies>
+         <production_company id="1212">Empire Pictures</production_company>
+         <production_company id="17630">Lexin Productions Inc</production_company>
+      </production_companies>
+      <original_title>Ghost Town</original_title>
+      <production_countries>
+         <production_country iso="US">United States of America</production_country>
+      </production_countries>
+      <poster_path>/dPDMzzgqWi6FkAPIH63AcpOfaxc.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>253106</_id>
+      <title>Four Letter Words</title>
+      <genres>
+         <genre id="35">Comedy</genre>
+         <genre id="18">Drama</genre>
+      </genres>
+      <overview>A study of the post-adolescent male psyche, Four Letter Words gives an often humorous but raw unadulterated look at the views, attitudes, and language of young men in suburban America. The film focuses on a dwindling summer night's party, at which the characters gather for the first time since high school graduation. As the night's activities take their toll, the immaturity level rises, the profanity flies and of course the drunken brawl breaks out. It will be a night to remember although some would wish to forget.</overview>
+      <release_date>2000-08-01</release_date>
+      <runtime>82</runtime>
+      <spoken_languages>
+         <spoken_language iso="en">English</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <actors>
+         <actor id="1292167" name="David Ari">
+            <character cast_id="5">Florio</character>
+         </actor>
+         <actor id="1292168" name="Henry Beylin">
+            <character cast_id="6">Sam</character>
+         </actor>
+         <actor id="163814" name="Fred Berman">
+            <character cast_id="7">Art</character>
+         </actor>
+         <actor id="1292169" name="Darcy Bledsoe">
+            <character cast_id="8">Kim</character>
+         </actor>
+      </actors>
+      <directors>
+         <director id="118415" profile_path="/8JIpTzkpeTtCimTAioqKCvCeTKk.jpg">Sean Baker</director>
+      </directors>
+      <original_title>Four Letter Words</original_title>
+      <poster_path>/iQaTwBtmyKx0GHgmGQzl947CTHE.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>275057</_id>
+      <title>Eva Ayllón - 30 Años Eva Ayllón</title>
+      <genres>
+         <genre id="10402">Music</genre>
+      </genres>
+      <overview>The concert registration of Eva Ayllón's "Concierto de todos" on 31 October 2001 in Estadio de San Marcos in Lima. The Afro-Peruvian queen celebrates 30 years performance of "música criolla".</overview>
+      <vote_average>6.5</vote_average>
+      <vote_count>1</vote_count>
+      <release_date>2001-10-31</release_date>
+      <runtime>109</runtime>
+      <spoken_languages>
+         <spoken_language iso="es">Español</spoken_language>
+      </spoken_languages>
+      <status>Released</status>
+      <actors>
+         <actor id="126792" name="Eva Ayllon">
+            <character cast_id="0">Eva Ayllon</character>
+         </actor>
+      </actors>
+      <original_title>Eva Ayllón - 30 Años Eva Ayllón</original_title>
+      <production_countries>
+         <production_country iso="PE">Peru</production_country>
+      </production_countries>
+      <homepage>http://http://evaayllon.com.pe</homepage>
+      <poster_path>/vvfLHOvjyWCW58TTq6qwtdMNU6G.jpg</poster_path>
+   </movie>
+   <movie>
+      <_id>275146</_id>
+      <title>The Library</title>
+      <overview>Jim falls in love with Ann who works at a library at first sight. The only obstacle for his love is the library's rule - "Keep Quiet." So he writes down his feeling for her in the books he borrows. Unfortunately, Ann never realizes what he does until one day she accidentally sees his messages but Jim doesn't show up at the library anymore with unknown reasons. How will this love end - in laughter or tears?</overview>
+      <runtime>31</runtime>
+      <status>Released</status>
+      <actors>
+         <actor id="81253" name="Ananda Everingham" profile_path="/omu4DVNyTBluOm1oxLXROaAZ1HW.jpg">
+            <character cast_id="1">Jim</character>
+         </actor>
+         <actor id="1329155" name="Selina Wiesmann">
+            <character cast_id="2">Ann</character>
+         </actor>
+         <actor id="1329157" name="Niti Chaichitathorn">
             <character cast_id="3"/>
          </actor>
       </actors>
       <directors>
-         <director id="1168437">Daniele Carnacina</director>
+         <director id="1197896">Nattawut Poonpiriya</director>
       </directors>
-      <original_title>Un'insolita vendemmia</original_title>
-      <poster_path>/7GgbSVWiKDimBL2Ro1sqNhb4KGN.jpg</poster_path>
-   </movie>
-   <movie>
-      <_id>260577</_id>
-      <title>Sepulturero</title>
-      <overview>Horror movie about grave robbing</overview>
-      <release_date>2014-03-22</release_date>
-      <status>Released</status>
-      <actors>
-         <actor id="1303521" name="Jepprie Lomibao">
-            <character cast_id="1">as</character>
-         </actor>
-         <actor id="1303522" name="Mark Alvin Marcelo">
-            <character cast_id="2">as</character>
-         </actor>
-         <actor id="1303523" name="Justin Candado">
-            <character cast_id="3">as</character>
-         </actor>
-         <actor id="1303524" name="Bernard Gonzales">
-            <character cast_id="4">as</character>
-         </actor>
-         <actor id="1303525" name="Raymond Loquillano">
-            <character cast_id="5">as</character>
-         </actor>
-         <actor id="1303526" name="Aryan Nanale">
-            <character cast_id="6">as</character>
-         </actor>
-         <actor id="1303527" name="Tessie Valdez">
-            <character cast_id="7">as</character>
-         </actor>
-         <actor id="1303528" name="Elias Bancil">
-            <character cast_id="8">as</character>
-         </actor>
-      </actors>
-      <directors>
-         <director id="1303520">Christian Villete</director>
-      </directors>
-      <original_title>Sepulturero</original_title>
-      <homepage>https://www.facebook.com/CineHaraya</homepage>
-      <poster_path>/4Kinjv9Xp45sECvBJIsM3VHIN9u.jpg</poster_path>
-   </movie>
-   <movie>
-      <_id>271901</_id>
-      <title>Ben 10: Race Against Time</title>
-      <release_date>2007-11-21</release_date>
-      <status>Released</status>
-      <original_title>Ben 10: Race Against Time</original_title>
-      <budget>18000000</budget>
-      <poster_path>/teJRsWMhJO8i711A6oHDUiuNgLQ.jpg</poster_path>
+      <original_title>The Library</original_title>
+      <production_countries>
+         <production_country iso="TH">Thailand</production_country>
+      </production_countries>
+      <poster_path>/AoFxnBLggtqIuEsXYwLFHyuyu38.jpg</poster_path>
    </movie>
    <movie>
       <_id>279721</_id>
@@ -565,41 +759,5 @@
       <release_date>1988-01-01</release_date>
       <status>Released</status>
       <original_title>Pancho Barnes</original_title>
-   </movie>
-   <movie>
-      <_id>286458</_id>
-      <title>Temporary Paradise</title>
-      <genres>
-         <genre id="18">Drama</genre>
-      </genres>
-      <overview>1943. French POWs escape through Hungary towards the Balkan. Jacques and Gérard are caught and taken to an internment camp at Lake Balaton. Jacques meets Klári here, who was abandoned by her military officer husband for her Jewish origin. Both want to have a short affair, but love unfolds between them.</overview>
-      <release_date>1981-08-12</release_date>
-      <runtime>92</runtime>
-      <spoken_languages>
-         <spoken_language iso="hu">Magyar</spoken_language>
-      </spoken_languages>
-      <status>Released</status>
-      <actors>
-         <actor id="1253420" name="Edit Frajt">
-            <character cast_id="0"/>
-         </actor>
-         <actor id="18177" name="André Dussollier" profile_path="/rKZXoZJBUMKRbACbAGEat7wvAr7.jpg">
-            <character cast_id="1"/>
-         </actor>
-         <actor id="38899" name="László Szabó" profile_path="/dFEmQzfyfU557kH8PGHR3GI29EE.jpg">
-            <character cast_id="2"/>
-         </actor>
-         <actor id="25449" name="Ágnes Bánfalvy">
-            <character cast_id="3"/>
-         </actor>
-      </actors>
-      <directors>
-         <director id="149362">András Kovács</director>
-      </directors>
-      <original_title>Ideiglenes paradicsom</original_title>
-      <production_countries>
-         <production_country iso="HU">Hungary</production_country>
-      </production_countries>
-      <poster_path>/xWjT3KVqNEPbCTgSLhjRueS6JkT.jpg</poster_path>
    </movie>
 </movies>

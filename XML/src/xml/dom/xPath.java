@@ -1,8 +1,8 @@
- /*
-  * To change this license header, choose License Headers in Project Properties.
-  * To change this template file, choose Tools | Templates
-  * and open the template in the editor.
-  */
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package xml.dom;
 
 import java.util.Iterator;
@@ -34,7 +34,7 @@ public class xPath
         xpath = xpf.newXPath();
         this.doc = doc;
         
-        // tous les films qui n'ont pas un vote_count OU un vote_average (XOR)        
+        // tous les films qui n'ont pas un vote_count OU un vote_average (XOR)
         String EXPRmovie = "//mv:movie[//mv:vote_count and not(//mv:vote_average) or //mv:vote_average and not(//mv:vote_count)]//mv:_id";
         xpath.setNamespaceContext(new NamespaceContext() {
             
@@ -68,9 +68,8 @@ public class xPath
         try
         {
             NodeList idNodes = (NodeList) expression.evaluate(doc, XPathConstants.NODESET);
-            System.out.println("XPath count = " + idNodes.getLength());            
-                for (int i = 0; i < idNodes.getLength(); i++)                
-                    System.out.println("Erreur : élément manquant pour le film " + idNodes.item(i).getTextContent());                
+            for (int i = 0; i < idNodes.getLength(); i++)
+                System.out.println("Erreur : élément manquant pour le film " + idNodes.item(i).getTextContent());
         }
         catch (XPathExpressionException ex)
         {
