@@ -1,17 +1,17 @@
- /*
-  * To change this license header, choose License Headers in Project Properties.
-  * To change this template file, choose Tools | Templates
-  * and open the template in the editor.
-  */
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package xml.dom;
 
 import com.mongodb.BasicDBList;
-import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,6 +34,7 @@ import org.w3c.dom.bootstrap.DOMImplementationRegistry;
 import org.w3c.dom.ls.DOMImplementationLS;
 import org.w3c.dom.ls.LSOutput;
 import org.w3c.dom.ls.LSSerializer;
+import xml.utils.BaseXUtils;
 
 /**
  *
@@ -43,9 +44,12 @@ public class DomBuilder
 {
     private int lvl;
     private Document doc;
+    private BaseXUtils basex;
     
-    public DomBuilder(int lvl)
+    public DomBuilder(int lvl, BaseXUtils basex)
     {
+        this.basex = basex;
+        
         this.lvl = lvl;
         if(lvl == 2)
         {
@@ -94,6 +98,24 @@ public class DomBuilder
         {
             Node movie = generateMovieNode(DBmovie);
             root.appendChild(movie);
+            
+            // BaseX
+            if(basex != null)
+            {
+                basex.insert(movie, DBmovie.get("_id").toString());
+            }
+        }
+        // BaseX
+        if(basex != null)
+        {
+            try
+            {
+                basex.getSession().close();
+            }
+            catch (IOException ex)
+            {
+                Logger.getLogger(DomBuilder.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
     

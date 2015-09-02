@@ -20,7 +20,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -38,6 +37,7 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 import xml.dom.DomBuilder;
 import xml.dom.xPath;
+import xml.utils.BaseXUtils;
 import xml.utils.Mongo;
 // </editor-fold>
 
@@ -60,6 +60,7 @@ public class XML
         AP.addArgument("-v", "--validation").setDefault("dtd").help("Validation dtd or xsd");
         AP.addArgument("-xs", "--xslt").setDefault("./movies_xslt.xml").help("Output XSLT file");
         AP.addArgument("-xh", "--xhtml").setDefault("./movies.html").help("Output XHTML file");
+        AP.addArgument("-b", "--basex").setDefault("false").help("Insert into BaseX");
         
         Namespace ARGS = null;
         try
@@ -113,7 +114,17 @@ public class XML
         Mongo mongo = new Mongo();
         DBCursor cursor =  mongo.getMovies(contentH);
         
-        DomBuilder domBuilder = new DomBuilder(domlvl);
+        // <editor-fold defaultstate="collapsed" desc="BaseX">
+        String bx = ARGS.getString("basex");
+        BaseXUtils basex;
+        if(bx.equalsIgnoreCase("true"))        
+            basex = new BaseXUtils();            
+        else
+            basex = null;
+               
+        // </editor-fold>
+        
+        DomBuilder domBuilder = new DomBuilder(domlvl, basex);
         
         System.out.printf("DOM build document : ");
         begin = System.nanoTime();
@@ -128,7 +139,7 @@ public class XML
         domBuilder.domSerialize(outFile);
         end = System.nanoTime() - begin;
         System.out.println(TimeUnit.NANOSECONDS.toMillis(end) + "ms");
-        // </editor-fold>
+        // </editor-fold>                
         
         // <editor-fold defaultstate="collapsed" desc="6. validation">
         String validation = ARGS.getString("validation");
