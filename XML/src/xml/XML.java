@@ -148,7 +148,7 @@ public class XML
             try
             {
                 parser = saxPF.newSAXParser().getXMLReader();
-                parser.setContentHandler(contentH);
+                parser.setContentHandler(new DefaultHandler());
                 parser.setErrorHandler(errorH);
                 
                 System.out.printf("DTD validation : ");

@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ /*
+  * To change this license header, choose License Headers in Project Properties.
+  * To change this template file, choose Tools | Templates
+  * and open the template in the editor.
+  */
 package xml.utils;
 
 import com.sun.org.apache.xerces.internal.dom.DocumentImpl;
@@ -13,13 +13,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 /**
  *
@@ -27,7 +28,7 @@ import org.w3c.dom.Node;
  */
 public class BaseXUtils
 {
-    private BaseXClient session = null;    
+    private BaseXClient session = null;
     
     public BaseXUtils()
     {
@@ -55,15 +56,15 @@ public class BaseXUtils
             ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
             
             session.replace(id, bais);
-        }        
+        }
         catch (TransformerException | IOException ex)
         {
             Logger.getLogger(BaseXUtils.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
+    
     public BaseXClient getSession()
     {
         return session;
-    }
+    }        
 }

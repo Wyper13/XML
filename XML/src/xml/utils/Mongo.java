@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ /*
+  * To change this license header, choose License Headers in Project Properties.
+  * To change this template file, choose Tools | Templates
+  * and open the template in the editor.
+  */
 package xml.utils;
 
 import com.mongodb.BasicDBObject;
@@ -108,49 +108,31 @@ public class Mongo
         {
             projections = projBase;
         }
-        else if(content.getIncl().isEmpty())
+        else if(content.getIncl().isEmpty() && !content.getExcl().isEmpty()) // 0 incl ET n excl
         {
             projections = projBase;
             projections.removeAll(content.getExcl());
         }
-        else
+        else // n incl ET n excl
         {
             // Incl - excl
             Set<String> projDiff = content.getIncl();
             projDiff.removeAll(content.getExcl());
             
-            // Sélection des éléments demandés, dans l'ordre
+            // Sélection des éléments demandés, en éliminant les champs rejetés
             for(int i = 0 ; i < projBase.size() ; i++)
-            {
                 if(projDiff.contains(projBase.get(i)))
-                {
                     projections.add(projBase.get(i));
-                    if(projBase.get(i).equals("actors"))
-                    {
-                        projections.add("actors.id");
-                        projections.add("actors.name");
-                        projections.add("actors.cast_id");
-                        projections.add("actors.character");
-                        projections.add("actors.profile_path");
-                    }
-                    if(projBase.get(i).equals("directors"))
-                    {
-                        projections.add("directors.id");
-                        projections.add("directors.name");
-                        projections.add("directors.profile_path");
-                    }
-                }
-            }
         }
-            // Requète mongo
-            proj = new BasicDBObject();
-            for (String p : projections)
-                proj.put(p, "1");
-            
-            cursor = coll.find(idsQuery, proj);
-
+        // Requète mongo
+        proj = new BasicDBObject();
+        for (String p : projections)
+            proj.put(p, "1");
+        
+        cursor = coll.find(idsQuery, proj);
+        
 //            System.out.println("elements in cursor : " + cursor.size());
-//            while (cursor.hasNext()) 
+//            while (cursor.hasNext())
 //            {
 //                System.out.println(cursor.next());
 //            }

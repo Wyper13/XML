@@ -48,7 +48,7 @@ public class RandomID
         int m = A.size()-1; // index du dernier élément de A
         int d = A.get(m);   // dernier élément de A
         int i = H.get(v);   // index dans A de v (valeur à bouger)
-        A.set(i, d);        // remplacer la valeur à enlever par le dernière valeur
+        A.set(i, d);        // remplacer la valeur à enlever par la dernière valeur
         A.remove(m);        // décroit la taille de A de 1
         H.remove(v);        // supprimer la valeur v de H
         H.put(d, i);        // ajouter la valeur d avec le bon indice

@@ -208,10 +208,11 @@ public class DomBuilder
     
     private void genreChild(DBObject DBmovie, Element movie)
     {
-        Element subRoot = doc.createElementNS("http://moviesRT", "genres");
         BasicDBList genres = (BasicDBList) DBmovie.get("genres");
         if(!genres.isEmpty())
         {
+            Element subRoot = doc.createElementNS("http://moviesRT", "genres");
+            
             for (Object genre : genres)
             {
                 Element g = doc.createElementNS("http://moviesRT", "genre");
@@ -226,10 +227,11 @@ public class DomBuilder
     
     private void languagesChild(DBObject DBmovie, Element movie)
     {
-        Element subRoot = doc.createElementNS("http://moviesRT", "spoken_languages");
         BasicDBList langs = (BasicDBList) DBmovie.get("spoken_languages");
         if(!langs.isEmpty())
         {
+            Element subRoot = doc.createElementNS("http://moviesRT", "spoken_languages");
+            
             for (Object lang : langs)
             {
                 Element g = doc.createElementNS("http://moviesRT", "spoken_language");
@@ -243,11 +245,12 @@ public class DomBuilder
     }
     
     private void actorsChild(DBObject DBmovie, Element movie)
-    {
-        Element subRoot = doc.createElementNS("http://moviesRT", "actors");
+    {        
         BasicDBList actors = (BasicDBList) DBmovie.get("actors");
         if(!actors.isEmpty())
         {
+            Element subRoot = doc.createElementNS("http://moviesRT", "actors");
+            
             for (Object act : actors)
             {
                 Element g = doc.createElementNS("http://moviesRT", "actor");
@@ -269,11 +272,12 @@ public class DomBuilder
     }
     
     private void directorsChild(DBObject DBmovie, Element movie)
-    {
-        Element subRoot = doc.createElementNS("http://moviesRT", "directors");
+    {        
         BasicDBList directors = (BasicDBList) DBmovie.get("directors");
         if(!directors.isEmpty())
         {
+            Element subRoot = doc.createElementNS("http://moviesRT", "directors");
+            
             for (Object director : directors)
             {
                 Element g = doc.createElementNS("http://moviesRT", "director");
@@ -289,11 +293,12 @@ public class DomBuilder
     }
     
     private void companiesChild(DBObject DBmovie, Element movie)
-    {
-        Element subRoot = doc.createElementNS("http://moviesRT", "production_companies");
+    {        
         BasicDBList companies = (BasicDBList) DBmovie.get("production_companies");
         if(!companies.isEmpty())
         {
+            Element subRoot = doc.createElementNS("http://moviesRT", "production_companies");
+            
             for (Object company : companies)
             {
                 Element g = doc.createElementNS("http://moviesRT", "production_company");
@@ -307,11 +312,12 @@ public class DomBuilder
     }
     
     private void countriesChild(DBObject DBmovie, Element movie)
-    {
-        Element subRoot = doc.createElementNS("http://moviesRT", "production_countries");
+    {        
         BasicDBList countries = (BasicDBList) DBmovie.get("production_countries");
         if(!countries.isEmpty())
         {
+            Element subRoot = doc.createElementNS("http://moviesRT", "production_countries");
+            
             for (Object country : countries)
             {
                 Element g = doc.createElementNS("http://moviesRT", "production_country");
